@@ -115,6 +115,14 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .srv-btn{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:600;padding:4px 10px;border-radius:4px;text-decoration:none;transition:all .15s;border:1px solid var(--border);background:var(--white);color:var(--slate)}
 .srv-btn-email:hover{background:var(--copper);color:white;border-color:var(--copper)}
 .srv-btn-wa:hover{background:#16A34A;color:white;border-color:#16A34A}
+
+/* Fortalezas */
+.fortalezas-row{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:14px 0 16px}
+.fortaleza-item{display:flex;gap:10px;align-items:flex-start;background:var(--cream);border:1px solid var(--border);border-radius:6px;padding:10px 12px}
+.for-icon{font-size:17px;flex-shrink:0;line-height:1.4}
+.fortaleza-item strong{font-size:11.5px;color:var(--slate);display:block;margin-bottom:2px}
+.fortaleza-item p{font-size:11px;color:var(--gray);line-height:1.4;margin:0}
+@media(max-width:640px){.fortalezas-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -181,7 +189,13 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
         })();
       </script>
       <div>
-        <div class="quien-bio">Hay información geológica que habla sola — y hay información que requiere a alguien que haya visto el mismo patrón en una docena de proyectos. Eso es lo que aporto.<br><br>Veintidós años en geología minera, ciclo completo: exploración, desarrollo y operaciones, rajo y subterráneo. Pórfidos, mantos, vetas y exóticos; Cu, Au, Ag, Mo, Fe y Co en distintos contextos metalogenéticos.<br><br>Integro geología, geotécnica, geometalurgia, geoestadística y QA/QC para leer un proyecto como un todo. Trabajo en forma independiente — sin conflicto de interés — para inversionistas, dueños y equipos que necesitan una mirada técnica sólida. Y transfiero ese criterio a personas y equipos que quieren fortalecer su capacidad.</div>
+        <div class="quien-bio">Veintidós años en geología minera — ciclo completo: exploración, desarrollo y operaciones, rajo y subterráneo. Pórfidos, mantos, vetas y exóticos; Cu, Au, Ag, Mo, Fe y Co en distintos contextos metalogenéticos.<br><br>Esa trayectoria me permite ver lo que los datos solos no dicen: integrar geología, geotécnica, geometalurgia, geoestadística y QA/QC para leer un proyecto como un todo — y traducirlo en una decisión concreta.<br><br>Trabajo de forma independiente — sin conflicto de interés — para inversionistas, dueños y equipos que necesitan criterio técnico con fundamento real. Y transfiero ese conocimiento a personas y equipos que quieren fortalecer su capacidad.</div>
+        <div class="fortalezas-row">
+          <div class="fortaleza-item"><span class="for-icon">🧭</span><div><strong>Visión sistémica</strong><p>Leo geología, geotécnica, geometalurgia y datos como un sistema, no como partes separadas.</p></div></div>
+          <div class="fortaleza-item"><span class="for-icon">📊</span><div><strong>Evidencia antes que supuestos</strong><p>Cada recomendación tiene respaldo técnico trazable y defendible.</p></div></div>
+          <div class="fortaleza-item"><span class="for-icon">🔍</span><div><strong>Precisión con contexto</strong><p>Encuentro el patrón que conecta lo que los datos muestran con lo que el negocio necesita decidir.</p></div></div>
+          <div class="fortaleza-item"><span class="for-icon">👥</span><div><strong>Transferencia real</strong><p>El criterio queda en el equipo, no solo en el informe.</p></div></div>
+        </div>
         <div class="stats-row">
           <div class="stat-box"><div class="stat-num">22+</div><div class="stat-label">Años en minería rajo y subterránea</div></div>
           <div class="stat-box"><div class="stat-num">16</div><div class="stat-label">Proyectos documentados (2004–2026)</div></div>
@@ -315,18 +329,18 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
   <div class="como-grid">
     <div class="como-step">
       <div class="como-num">01</div>
-      <div class="como-title">Conversación sin costo</div>
-      <div class="como-desc">Me cuentas qué tienes y qué necesitas saber. En 30 minutos defines si puedo ayudarte — sin compromiso ni presupuesto previo.</div>
+      <div class="como-title">Entiendo el sistema completo</div>
+      <div class="como-desc">Antes de cualquier conclusión, escucho el contexto: qué datos tienes, qué decisión enfrentas y qué incertidumbre te frena. Eso no tiene costo.</div>
     </div>
     <div class="como-step">
       <div class="como-num">02</div>
-      <div class="como-title">Propuesta concreta</div>
-      <div class="como-desc">Alcance claro, entregables definidos y precio fijo. Sabes exactamente qué recibes y cuándo — sin sorpresas al final.</div>
+      <div class="como-title">Alcance y precio definidos</div>
+      <div class="como-desc">Propuesta con entregables específicos y valor fijo. Sabes exactamente qué recibes, en qué plazo y por qué precio — sin sorpresas.</div>
     </div>
     <div class="como-step">
       <div class="como-num">03</div>
-      <div class="como-title">Criterio, no volumen</div>
-      <div class="como-desc">No un informe de 200 páginas. Una opinión técnica directa con las recomendaciones que puedes aplicar en tu negocio.</div>
+      <div class="como-title">Recomendación que se puede defender</div>
+      <div class="como-desc">No un volumen de páginas. Una opinión técnica fundamentada, directa y trazable — que puedes aplicar, mostrar a un mandante o usar para decidir.</div>
     </div>
   </div>
 
