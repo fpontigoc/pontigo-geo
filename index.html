@@ -126,7 +126,9 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
   .stats-row .stat-box{min-width:70px}
   .col-title{font-size:11px}
   .col-list ul li{font-size:12.5px;padding:7px 0}
-  .srv-card{padding:14px}
+  .srv-card{padding:14px;max-width:100%!important}
+  .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:auto;max-width:100%!important}
+  .dep-card{min-width:0;flex-basis:calc(50% - 5px)}
   .cta-banner{padding:18px 16px}
   .pub-footer{flex-direction:column;gap:12px;text-align:center}
   .pub-footer a.cta{width:100%;text-align:center;padding:13px 0}
