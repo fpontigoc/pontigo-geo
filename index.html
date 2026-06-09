@@ -32,6 +32,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .hero-name{font-size:26px;font-weight:700;line-height:1.2;margin-bottom:6px}
 .hero-subtitle{font-size:12.5px;color:var(--gray);margin-bottom:12px}
 .hero-tagline{font-size:14px;color:var(--slate2);font-style:italic;line-height:1.6;border-left:3px solid var(--copper);padding-left:14px;margin-bottom:16px}
+.hero-cred{font-size:11px;color:var(--copper);font-weight:600;margin-bottom:10px;letter-spacing:.15px;line-height:1.6}
 .hero-tags{display:flex;flex-wrap:wrap;gap:6px}
 .htag{background:var(--light);border:1px solid var(--border);border-radius:20px;padding:3px 12px;font-size:11px;font-weight:500}
 .htag.c{background:var(--copper);border-color:var(--copper);color:white}
@@ -85,8 +86,24 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .pub-footer a.cta{background:var(--copper);color:white;padding:10px 24px;border-radius:5px;font-weight:700;text-decoration:none;font-size:13px}
 .pub-footer a.cta:hover{background:var(--copper2)}
 
-@media(max-width:640px){.srv-grid,.como-grid,.two-col{grid-template-columns:1fr}.hero{flex-direction:column}}
+@media(max-width:640px){.srv-grid,.como-grid,.two-col,.quien-inner{grid-template-columns:1fr}.hero{flex-direction:column}.photo-slot{width:80px;height:80px;font-size:20px}.stats-row .stat-box{min-width:70px}}
 @media print{.topbar{display:none}.pub-wrap{padding:0}}
+
+/* ── QUIÉN SOY ── */
+.quien-wrap{background:white;border:1px solid var(--border);border-radius:10px;padding:22px 24px;margin-bottom:24px}
+.quien-inner{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
+.photo-slot{width:110px;height:110px;border-radius:50%;background:var(--slate);display:flex;align-items:center;justify-content:center;color:var(--copper2);font-size:26px;font-weight:700;flex-shrink:0;border:3px solid var(--copper);letter-spacing:1px}
+.quien-bio{font-size:12.5px;color:var(--slate2);line-height:1.75;margin-bottom:16px}
+.stats-row{display:flex;flex-wrap:wrap;gap:10px}
+.stat-box{background:var(--cream);border:1px solid var(--border);border-radius:6px;padding:9px 14px;text-align:center;min-width:80px;flex:1}
+.stat-num{font-size:20px;font-weight:700;color:var(--copper);line-height:1}
+.stat-label{font-size:9.5px;color:var(--gray);margin-top:3px;line-height:1.35}
+
+/* ── CLIENTES ── */
+.client-strip-wrap{margin-bottom:24px}
+.client-logos{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.client-chip{background:white;border:1px solid var(--border);border-radius:5px;padding:5px 13px;font-size:11px;font-weight:600;color:var(--slate2)}
+.client-chip.big{border-color:var(--copper);color:var(--copper)}
 
 /* Contacto por servicio */
 .srv-btns{display:flex;gap:5px;flex-wrap:wrap}
@@ -111,6 +128,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
       <div class="hero-badge">Pontigo Geociencias Aplicadas</div>
       <div class="hero-name">Francisco Javier Pontigo Cortés</div>
       <div class="hero-subtitle">Geólogo Senior · Consultor Independiente · Copiapó, Región de Atacama</div>
+      <div class="hero-cred">22+ años en minería metálica &nbsp;·&nbsp; Codelco · BHP · Collahuasi · SQM · Capstone · Marcobre · Shougang &nbsp;·&nbsp; NI 43-101 · JORC · SK1300</div>
       <div class="hero-tagline">"Tu negocio minero necesita decisiones técnicas correctas — antes de gastar más. Te digo qué tienes, qué vale y cómo proteger tu inversión."</div>
       <div class="hero-tags">
         <span class="htag c">+22 años de experiencia</span>
@@ -135,6 +153,41 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     <div class="cs-item"><span class="cs-icon">📲</span> <a href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20gustar%C3%ADa%20consultarte%20sobre%20tus%20servicios." target="_blank" style="color:var(--copper2)">WhatsApp +56 9 9127 9171</a></div>
     <div class="cs-item"><span class="cs-icon">🔗</span> <a href="https://www.linkedin.com/in/francisco-javier-pontigo-cortes-20816117/" target="_blank">LinkedIn</a></div>
     <div class="cs-item"><span class="cs-icon">📍</span> Copiapó, Región de Atacama</div>
+  </div>
+
+  <!-- QUIÉN SOY -->
+  <div class="quien-wrap">
+    <div class="sec-title" style="margin-bottom:14px">Quién soy</div>
+    <div class="quien-inner">
+      <!-- Reemplazar con foto real: cambiar el div.photo-slot por <img src="foto.jpg" style="width:110px;height:110px;border-radius:50%;object-fit:cover;border:3px solid var(--copper)"> -->
+      <div class="photo-slot">FJP</div>
+      <div>
+        <div class="quien-bio">Geólogo senior con más de 22 años en minería metálica — desde exploración y desarrollo hasta operaciones y auditorías independientes. He trabajado directamente en proyectos de Codelco, BHP, Collahuasi, Mantos Copper, Capstone Mining, SQM, Marcobre y Shougang, bajo estándares internacionales NI 43-101, JORC 2012 y SK1300. Integro geología, minería y metalurgia para dar respuestas concretas: qué tiene el yacimiento, qué vale y qué riesgos enfrenta — antes de que el gasto sea un problema.</div>
+        <div class="stats-row">
+          <div class="stat-box"><div class="stat-num">22+</div><div class="stat-label">Años en minería metálica</div></div>
+          <div class="stat-box"><div class="stat-num">16</div><div class="stat-label">Proyectos documentados (2004–2026)</div></div>
+          <div class="stat-box"><div class="stat-num">5+</div><div class="stat-label">Auditorías independientes de modelos de recursos</div></div>
+          <div class="stat-box"><div class="stat-num">8</div><div class="stat-label">Clientes de gran y mediana minería</div></div>
+          <div class="stat-box"><div class="stat-num">5</div><div class="stat-label">Tipos de depósito con experiencia directa</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIENTES -->
+  <div class="client-strip-wrap">
+    <div class="sec-title">Proyectos realizados con</div>
+    <div class="client-logos">
+      <div class="client-chip big">Codelco</div>
+      <div class="client-chip big">BHP</div>
+      <div class="client-chip big">Collahuasi</div>
+      <div class="client-chip big">SQM</div>
+      <div class="client-chip">Mantos Copper · CMCC</div>
+      <div class="client-chip">Capstone Mining</div>
+      <div class="client-chip">Marcobre</div>
+      <div class="client-chip">Shougang</div>
+      <div class="client-chip">Hot Chili</div>
+    </div>
   </div>
 
   <!-- SERVICIOS -->
