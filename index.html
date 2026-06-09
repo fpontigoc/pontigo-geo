@@ -148,6 +148,14 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .fortaleza-item strong{font-size:11.5px;color:var(--slate);display:block;margin-bottom:2px}
 .fortaleza-item p{font-size:11px;color:var(--gray);line-height:1.4;margin:0}
 @media(max-width:640px){.fortalezas-row{grid-template-columns:1fr}}
+
+.hero-free{font-size:11.5px;color:var(--copper);font-weight:600;margin:-4px 0 12px;line-height:1.5}
+.hero-free a{color:var(--copper);text-decoration:underline;text-underline-offset:2px}
+.hero-free a:hover{opacity:.8}
+.srv-grid>.srv-card:last-child:nth-child(odd){grid-column:1/-1;max-width:calc(50% - 5px)}
+.wa-float{display:none;position:fixed;bottom:22px;right:20px;background:#16A34A;color:white;font-size:26px;width:58px;height:58px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.35);text-decoration:none;z-index:999;transition:transform .15s,box-shadow .15s}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(0,0,0,.4)}
+@media(max-width:640px){.wa-float{display:flex}}
 </style>
 </head>
 <body>
@@ -165,9 +173,10 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     <div class="hero-left">
       <div class="hero-badge">Pontigo Geociencias Aplicadas</div>
       <div class="hero-name">Francisco Javier Pontigo Cortés</div>
-      <div class="hero-subtitle">Geólogo Senior · Consultor Independiente · Consultor Senior en <a href="https://geoinnova.cl" target="_blank" style="color:var(--copper);text-decoration:none;font-weight:600">Geoinnova</a> · Copiapó, Región de Atacama</div>
+      <div class="hero-subtitle">Geólogo Senior · Consultor Independiente · Copiapó, Región de Atacama</div>
       <div class="hero-cred">22+ años en minería rajo y subterránea &nbsp;·&nbsp; Exploración · Proyectos · Talleres · Formación de equipos</div>
       <div class="hero-tagline">"Donde otros ven datos geológicos, yo veo la decisión que necesitas tomar."</div>
+      <div class="hero-free">Primera conversación sin costo — <a href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank">cuéntame qué tienes →</a></div>
       <div class="hero-tags">
         <span class="htag c">+22 años de experiencia</span>
         <span class="htag">Ciclo minero completo</span>
@@ -191,6 +200,32 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     <div class="cs-item"><span class="cs-icon">📲</span> <a href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20gustar%C3%ADa%20consultarte%20sobre%20tus%20servicios." target="_blank" style="color:var(--copper2)">WhatsApp +56 9 9127 9171</a></div>
     <div class="cs-item"><span class="cs-icon">🔗</span> <a href="https://www.linkedin.com/in/francisco-javier-pontigo-cortes-20816117/" target="_blank">LinkedIn</a></div>
     <div class="cs-item"><span class="cs-icon">📍</span> Copiapó, Región de Atacama</div>
+  </div>
+
+  <!-- DOS COLUMNAS -->
+  <div class="two-col">
+    <div class="col-list">
+      <div class="sec-title">¿A quién ayudo?</div>
+      <ul>
+        <li>Pequeños y medianos mineros que quieren saber si su operación tiene futuro económico</li>
+        <li>Inversionistas que necesitan saber si un proyecto minero vale lo que piden por él</li>
+        <li>Empresas con datos históricos de calidad incierta que deben tomar decisiones pronto</li>
+        <li>Consultoras que necesitan refuerzo técnico puntual o una segunda opinión independiente</li>
+        <li>Universidades, OTEC y empresas que quieren formación aplicada con casos reales</li>
+        <li>Organismos públicos y programas de fomento a la pequeña y mediana minería</li>
+      </ul>
+    </div>
+    <div class="col-list">
+      <div class="sec-title">¿Qué gana tu negocio?</div>
+      <ul>
+        <li>Sabes si tu inversión tiene base real — antes de comprometer más dinero</li>
+        <li>Evitas pagar estudios costosos con datos que todavía no están listos</li>
+        <li>Priorizas con criterio: qué corregir, qué complementar, qué no tocar</li>
+        <li>Puedes negociar mejor con ENAMI, inversionistas, laboratorios o compradores</li>
+        <li>Equipos que cometen menos errores y generan información de mejor calidad</li>
+        <li>Una opinión técnica objetiva — no vinculada a ningún proveedor ni interés</li>
+      </ul>
+    </div>
   </div>
 
   <!-- QUIÉN SOY -->
@@ -232,6 +267,25 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     </div>
   </div>
 
+  <!-- CÓMO TRABAJO -->
+  <div class="sec-title">Cómo trabajo</div>
+  <div class="como-grid">
+    <div class="como-step">
+      <div class="como-num">01</div>
+      <div class="como-title">Entiendo el sistema completo</div>
+      <div class="como-desc">Antes de cualquier conclusión, escucho el contexto: qué datos tienes, qué decisión enfrentas y qué incertidumbre te frena. Eso no tiene costo.</div>
+    </div>
+    <div class="como-step">
+      <div class="como-num">02</div>
+      <div class="como-title">Alcance y precio definidos</div>
+      <div class="como-desc">Propuesta con entregables específicos y valor fijo. Sabes exactamente qué recibes, en qué plazo y por qué precio — sin sorpresas.</div>
+    </div>
+    <div class="como-step">
+      <div class="como-num">03</div>
+      <div class="como-title">Recomendación que se puede defender</div>
+      <div class="como-desc">No un volumen de páginas. Una opinión técnica fundamentada, directa y trazable — que puedes aplicar, mostrar a un mandante o usar para decidir.</div>
+    </div>
+  </div>
 
   <!-- CTA PRINCIPAL -->
   <div class="cta-banner">
@@ -372,52 +426,6 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     </div>
   </div>
 
-  <!-- CÓMO TRABAJO -->
-  <div class="sec-title">Cómo trabajo</div>
-  <div class="como-grid">
-    <div class="como-step">
-      <div class="como-num">01</div>
-      <div class="como-title">Entiendo el sistema completo</div>
-      <div class="como-desc">Antes de cualquier conclusión, escucho el contexto: qué datos tienes, qué decisión enfrentas y qué incertidumbre te frena. Eso no tiene costo.</div>
-    </div>
-    <div class="como-step">
-      <div class="como-num">02</div>
-      <div class="como-title">Alcance y precio definidos</div>
-      <div class="como-desc">Propuesta con entregables específicos y valor fijo. Sabes exactamente qué recibes, en qué plazo y por qué precio — sin sorpresas.</div>
-    </div>
-    <div class="como-step">
-      <div class="como-num">03</div>
-      <div class="como-title">Recomendación que se puede defender</div>
-      <div class="como-desc">No un volumen de páginas. Una opinión técnica fundamentada, directa y trazable — que puedes aplicar, mostrar a un mandante o usar para decidir.</div>
-    </div>
-  </div>
-
-  <!-- DOS COLUMNAS -->
-  <div class="two-col">
-    <div class="col-list">
-      <div class="sec-title">¿A quién ayudo?</div>
-      <ul>
-        <li>Pequeños y medianos mineros que quieren saber si su operación tiene futuro económico</li>
-        <li>Inversionistas que necesitan saber si un proyecto minero vale lo que piden por él</li>
-        <li>Empresas con datos históricos de calidad incierta que deben tomar decisiones pronto</li>
-        <li>Consultoras que necesitan refuerzo técnico puntual o una segunda opinión independiente</li>
-        <li>Universidades, OTEC y empresas que quieren formación aplicada con casos reales</li>
-        <li>Organismos públicos y programas de fomento a la pequeña y mediana minería</li>
-      </ul>
-    </div>
-    <div class="col-list">
-      <div class="sec-title">¿Qué gana tu negocio?</div>
-      <ul>
-        <li>Sabes si tu inversión tiene base real — antes de comprometer más dinero</li>
-        <li>Evitas pagar estudios costosos con datos que todavía no están listos</li>
-        <li>Priorizas con criterio: qué corregir, qué complementar, qué no tocar</li>
-        <li>Puedes negociar mejor con ENAMI, inversionistas, laboratorios o compradores</li>
-        <li>Equipos que cometen menos errores y generan información de mejor calidad</li>
-        <li>Una opinión técnica objetiva — no vinculada a ningún proveedor ni interés</li>
-      </ul>
-    </div>
-  </div>
-
   <!-- SISTEMAS -->
   <div class="sys-strip">
     <span class="sys-label">Sistemas con experiencia directa:</span>
@@ -473,5 +481,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
   el.appendChild(img);
 })();
 </script>
+<a class="wa-float" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank" aria-label="WhatsApp">📱</a>
+
 </body>
 </html>
