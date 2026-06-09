@@ -113,37 +113,6 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 
 @media print{.topbar{display:none}.pub-wrap{padding:0}}
 
-/* ── MOBILE ≤640px ── */
-@media(max-width:640px){
-  .srv-grid,.como-grid,.two-col,.quien-inner,.fortalezas-row{grid-template-columns:1fr!important}
-  .hero{flex-direction:column;gap:16px}
-  .hero-right{display:none}
-  .hero-name{font-size:22px}
-  .hero-tagline{font-size:13px}
-  .pub-wrap{padding:20px 14px 40px}
-  .topbar{padding:0 16px}
-  .contact-strip{flex-direction:column;gap:10px;padding:14px 16px}
-  .cs-item{font-size:13px;padding:6px 0}
-  .cs-item a{font-size:13px}
-  .photo-slot{width:80px;height:80px;font-size:20px}
-  .stats-row .stat-box{min-width:70px}
-  .col-title{font-size:11px}
-  .col-list ul li{font-size:12.5px;padding:7px 0}
-  .srv-card{padding:14px;max-width:100%!important;width:100%!important}
-  .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:auto!important;max-width:100%!important;width:100%!important}
-  .dep-card{min-width:0;flex-basis:calc(50% - 5px)}
-  .cta-banner{padding:18px 16px}
-  .pub-footer{flex-direction:column;gap:12px;text-align:center}
-  .pub-footer a.cta{width:100%;text-align:center;padding:13px 0;box-sizing:border-box}
-  .wa-float{display:flex;bottom:16px;right:16px}
-  .sys-strip{padding:10px 14px;gap:6px}
-  .quien-inner{display:grid!important;grid-template-columns:1fr!important}
-  .photo-slot{display:block;margin:0 auto 12px}
-  .quien-wrap{padding:16px}
-  #profile-photo{width:90px!important;height:90px!important;display:block;margin:0 auto 12px}
-  body{overflow-x:hidden}
-}
-
 /* ── QUIÉN SOY ── */
 .quien-wrap{background:white;border:1px solid var(--border);border-radius:10px;padding:22px 24px;margin-bottom:24px}
 .quien-inner{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
@@ -178,12 +147,45 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .fortaleza-item strong{font-size:11.5px;color:var(--slate);display:block;margin-bottom:2px}
 .fortaleza-item p{font-size:11px;color:var(--gray);line-height:1.4;margin:0}
 
+
 .hero-free{font-size:11.5px;color:var(--copper);font-weight:600;margin:-4px 0 12px;line-height:1.5}
 .hero-free a{color:var(--copper);text-decoration:underline;text-underline-offset:2px}
 .hero-free a:hover{opacity:.8}
 .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:1/-1;max-width:calc(50% - 5px)}
 .wa-float{display:none;position:fixed;bottom:22px;right:20px;background:#16A34A;color:white;font-size:26px;width:58px;height:58px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.35);text-decoration:none;z-index:999;transition:transform .15s,box-shadow .15s}
 .wa-float:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(0,0,0,.4)}
+
+
+/* ── MOBILE ≤640px ── */
+@media(max-width:640px){
+  .srv-grid,.como-grid,.two-col,.quien-inner,.fortalezas-row{grid-template-columns:1fr!important}
+  .hero{flex-direction:column;gap:16px}
+  .hero-right{display:none}
+  .hero-name{font-size:22px}
+  .hero-tagline{font-size:13px}
+  .pub-wrap{padding:20px 14px 40px}
+  .topbar{padding:0 16px}
+  .contact-strip{flex-direction:column;gap:10px;padding:14px 16px}
+  .cs-item{font-size:13px;padding:6px 0}
+  .cs-item a{font-size:13px}
+  .photo-slot{width:80px;height:80px;font-size:20px}
+  .stats-row .stat-box{min-width:70px}
+  .col-title{font-size:11px}
+  .col-list ul li{font-size:12.5px;padding:7px 0}
+  .srv-card{padding:14px;max-width:100%!important;width:100%!important}
+  .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:auto!important;max-width:100%!important;width:100%!important}
+  .dep-card{min-width:0;flex-basis:calc(50% - 5px)}
+  .cta-banner{padding:18px 16px}
+  .pub-footer{flex-direction:column;gap:12px;text-align:center}
+  .pub-footer a.cta{width:100%;text-align:center;padding:13px 0;box-sizing:border-box}
+  .wa-float{display:flex;bottom:16px;right:16px}
+  .sys-strip{padding:10px 14px;gap:6px}
+  .quien-inner{display:grid!important;grid-template-columns:1fr!important}
+  .photo-slot{display:block;margin:0 auto 12px}
+  .quien-wrap{padding:16px}
+  #profile-photo{width:90px!important;height:90px!important;display:block;margin:0 auto 12px}
+  body{overflow-x:hidden}
+}
 </style>
 </head>
 <body>
@@ -237,7 +239,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
       <ul>
         <li>Quien no sabe si vale la pena seguir invirtiendo en su operación o proyecto minero</li>
         <li>Inversionistas que quieren saber si el proyecto que están evaluando tiene respaldo técnico real</li>
-        <li>Empresas con datos históricos de calidad incierta que deben tomar decisiones pronto</li>
+        <li>Empresas que tienen datos pero no saben si son confiables — y tienen que decidir pronto</li>
         <li>Consultoras que necesitan refuerzo técnico puntual o una segunda opinión independiente</li>
         <li>Universidades, OTEC y empresas que quieren formación aplicada con casos reales</li>
         <li>Organismos públicos y programas de fomento a la pequeña y mediana minería</li>
@@ -248,9 +250,9 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
       <ul>
         <li>Sabes si tu inversión tiene base real — antes de comprometer más dinero</li>
         <li>Evitas pagar estudios costosos con datos que todavía no están listos</li>
-        <li>Priorizas con criterio: qué corregir, qué complementar, qué no tocar</li>
+        <li>Sabes exactamente qué corregir, qué ignorar y qué no tocar — sin adivinar</li>
         <li>Puedes negociar mejor con ENAMI, inversionistas, laboratorios o compradores</li>
-        <li>Equipos que cometen menos errores y generan información de mejor calidad</li>
+        <li>Tu equipo comete menos errores y produce información en la que puedes confiar</li>
         <li>Una opinión técnica objetiva — no vinculada a ningún proveedor ni interés</li>
       </ul>
     </div>
