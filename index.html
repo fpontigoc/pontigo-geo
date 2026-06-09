@@ -3,7 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pontigo Geociencias Aplicadas</title>
+<title>Francisco Pontigo — Consultor Geológico Senior | Copiapó, Chile</title>
+<meta name="description" content="Consultor geológico senior independiente. 22+ años en minería rajo y subterránea. Diagnóstico técnico, QA/QC, modelamiento geológico y formación de equipos. Copiapó, Atacama.">
+<!-- Open Graph / WhatsApp / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fpontigoc.github.io/pontigo-geo/">
+<meta property="og:title" content="Francisco Pontigo — Consultor Geológico Senior">
+<meta property="og:description" content="Donde otros ven datos geológicos, yo veo la decisión que necesitas tomar. 22+ años en minería · Consultor independiente · Copiapó.">
+<meta property="og:image" content="https://fpontigoc.github.io/pontigo-geo/foto.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Francisco Pontigo — Consultor Geológico Senior">
+<meta name="twitter:description" content="Donde otros ven datos geológicos, yo veo la decisión que necesitas tomar.">
+<meta name="twitter:image" content="https://fpontigoc.github.io/pontigo-geo/foto.jpg">
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%231B2D3E'/><text x='18' y='78' font-size='72' font-family='Arial' font-weight='bold' fill='%23B8722A'>P</text></svg>">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -67,6 +80,16 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 
 /* Cómo trabajo */
 .como-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px}
+/* ── CTA BANNER ── */
+.cta-banner{background:var(--slate);border-radius:10px;padding:22px 28px;margin:8px 0 28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.cta-text strong{display:block;color:white;font-size:14px;margin-bottom:4px}
+.cta-text span{color:rgba(255,255,255,.65);font-size:12px}
+.cta-btns{display:flex;gap:10px;flex-wrap:wrap}
+.cta-btn-primary{background:var(--copper);color:white;font-size:12px;font-weight:700;padding:9px 20px;border-radius:6px;text-decoration:none;white-space:nowrap;transition:background .15s}
+.cta-btn-primary:hover{background:var(--copper2)}
+.cta-btn-secondary{background:transparent;color:rgba(255,255,255,.8);font-size:12px;font-weight:600;padding:9px 18px;border-radius:6px;text-decoration:none;border:1px solid rgba(255,255,255,.3);white-space:nowrap;transition:border-color .15s}
+.cta-btn-secondary:hover{border-color:rgba(255,255,255,.7)}
+@media(max-width:640px){.cta-banner{flex-direction:column;align-items:flex-start}.cta-btns{width:100%}.cta-btn-primary,.cta-btn-secondary{flex:1;text-align:center}}
 .como-step{background:white;border:1px solid var(--border);border-radius:8px;padding:18px 18px 16px;position:relative;overflow:hidden}
 .como-num{font-size:48px;font-weight:700;color:var(--copper);opacity:.10;position:absolute;top:4px;right:10px;line-height:1;pointer-events:none}
 .como-title{font-size:13px;font-weight:700;color:var(--slate);margin-bottom:6px}
@@ -209,6 +232,18 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     </div>
   </div>
 
+
+  <!-- CTA PRINCIPAL -->
+  <div class="cta-banner">
+    <div class="cta-text">
+      <strong>¿Tienes un proyecto, una duda técnica o una decisión que tomar?</strong>
+      <span>La primera conversación no tiene costo — cuéntame qué tienes.</span>
+    </div>
+    <div class="cta-btns">
+      <a class="cta-btn-primary" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto%20geol%C3%B3gico." target="_blank">📱 Escríbeme por WhatsApp</a>
+      <a class="cta-btn-secondary" href="mailto:fpontigoc@outlook.com?subject=Consulta%20t%C3%A9cnica">✉️ Email</a>
+    </div>
+  </div>
 
   <!-- SERVICIOS -->
   <div class="sec-title">Servicios Profesionales</div>
