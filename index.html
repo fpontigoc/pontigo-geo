@@ -113,6 +113,21 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 
 @media print{.topbar{display:none}.pub-wrap{padding:0}}
 
+/* ── TRES PUERTAS DE ENTRADA ── */
+.entry-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:28px}
+.entry-card{background:white;border:1px solid var(--border);border-radius:10px;padding:20px 18px;display:flex;flex-direction:column;gap:8px}
+.entry-card.featured{border-color:var(--copper);border-width:2px}
+.entry-icon{font-size:30px;line-height:1}
+.entry-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--copper)}
+.entry-title{font-size:14px;font-weight:700;color:var(--slate);line-height:1.35}
+.entry-q{font-size:12px;color:var(--gray);font-style:italic;line-height:1.4;padding-left:10px;border-left:2px solid var(--border);margin-bottom:2px}
+.entry-list{list-style:none;margin:0;flex:1}
+.entry-list li{font-size:12px;color:var(--slate2);padding:5px 0;border-bottom:1px solid var(--light);display:flex;gap:7px;align-items:flex-start}
+.entry-list li::before{content:"→";color:var(--copper);font-size:11px;flex-shrink:0;font-weight:700;margin-top:1px}
+.entry-list li:last-child{border-bottom:none}
+.entry-cta{display:inline-block;background:var(--slate);color:white;font-size:11.5px;font-weight:700;padding:9px 14px;border-radius:5px;text-decoration:none;text-align:center;margin-top:6px;transition:background .15s}
+.entry-cta:hover{background:var(--copper)}
+
 /* ── QUIÉN SOY ── */
 .quien-wrap{background:white;border:1px solid var(--border);border-radius:10px;padding:22px 24px;margin-bottom:24px}
 .quien-inner{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
@@ -158,7 +173,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 
 /* ── MOBILE ≤640px ── */
 @media(max-width:640px){
-  .srv-grid,.como-grid,.two-col,.quien-inner,.fortalezas-row{grid-template-columns:1fr!important}
+  .srv-grid,.como-grid,.two-col,.quien-inner,.fortalezas-row,.entry-grid{grid-template-columns:1fr!important}
   .hero{flex-direction:column;gap:16px}
   .hero-right{display:none}
   .hero-name{font-size:22px}
@@ -203,10 +218,10 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     <div class="hero-left">
       <div class="hero-badge">Pontigo Geociencias Aplicadas</div>
       <div class="hero-name">Francisco Javier Pontigo Cortés</div>
-      <div class="hero-subtitle">Geólogo Senior · Consultor Independiente · Copiapó, Región de Atacama</div>
+      <div class="hero-subtitle">Geólogo Senior · Consultor Independiente · Copiapó, Región de Atacama · Disponible para desplazarse dentro y fuera de Chile</div>
       <div class="hero-cred">22+ años en minería rajo y subterránea &nbsp;·&nbsp; Exploración · Proyectos · Talleres · Formación de equipos</div>
       <div class="hero-tagline">"Donde otros ven datos geológicos, yo veo la decisión que necesitas tomar."</div>
-      <div class="hero-free">Primera conversación sin costo — <a href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank">cuéntame qué tienes →</a></div>
+      <div class="hero-free">Primera conversación sin costo · 30 min — <a href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank">cuéntame qué tienes →</a></div>
       <div class="hero-tags">
         <span class="htag c">+22 años de experiencia</span>
         <span class="htag">Ciclo minero completo</span>
@@ -229,7 +244,55 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     <div class="cs-item"><span class="cs-icon">✉️</span> <a href="mailto:fpontigoc@outlook.com">fpontigoc@outlook.com</a></div>
     <div class="cs-item"><span class="cs-icon">📲</span> <a href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20gustar%C3%ADa%20consultarte%20sobre%20tus%20servicios." target="_blank" style="color:var(--copper2)">WhatsApp +56 9 9127 9171</a></div>
     <div class="cs-item"><span class="cs-icon">🔗</span> <a href="https://www.linkedin.com/in/francisco-javier-pontigo-cortes-20816117/" target="_blank">LinkedIn</a></div>
-    <div class="cs-item"><span class="cs-icon">📍</span> Copiapó, Región de Atacama</div>
+    <div class="cs-item"><span class="cs-icon">📍</span> Copiapó, Atacama · Disponible para desplazarse dentro y fuera de Chile</div>
+  </div>
+
+  <!-- TRES PUERTAS DE ENTRADA -->
+  <div class="sec-title" style="margin-top:4px">¿Cuál es tu situación?</div>
+  <div class="entry-grid">
+
+    <div class="entry-card">
+      <div class="entry-icon">⛏️</div>
+      <div class="entry-tag">Minero · Pirquinero · Dueño de pertenencia</div>
+      <div class="entry-title">Tengo una mina, prospecto o pertenencia</div>
+      <div class="entry-q">"Antes de gastar más, necesitas saber exactamente qué tienes — y qué no."</div>
+      <ul class="entry-list">
+        <li>Ordeno tus antecedentes, muestras y leyes existentes</li>
+        <li>Visita técnica a tu faena</li>
+        <li>Reviso mapas, datos y situación real del terreno</li>
+        <li>Te digo el próximo paso concreto — sin tecnicismos</li>
+      </ul>
+      <a class="entry-cta" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20tengo%20una%20mina%20o%20pertenencia%20y%20quisiera%20una%20opini%C3%B3n%20t%C3%A9cnica." target="_blank">📱 Cuéntame tu caso</a>
+    </div>
+
+    <div class="entry-card">
+      <div class="entry-icon">💼</div>
+      <div class="entry-tag">Inversionista · Empresa · Fondo</div>
+      <div class="entry-title">Quiero invertir o evaluar un proyecto</div>
+      <div class="entry-q">"¿La geología sostiene lo que te están vendiendo — o solo el discurso?"</div>
+      <ul class="entry-list">
+        <li>Semáforo técnico del proyecto</li>
+        <li>Riesgos principales identificados</li>
+        <li>Preguntas clave para hacer a la contraparte</li>
+        <li>Recomendación: avanzar, pedir más datos o detener</li>
+      </ul>
+      <a class="entry-cta" href="mailto:fpontigoc@outlook.com?subject=Revisión%20Técnica%20Express%20de%20proyecto%20minero">✉️ Solicitar revisión express</a>
+    </div>
+
+    <div class="entry-card">
+      <div class="entry-icon">🎓</div>
+      <div class="entry-tag">Universidad · OTEC · Empresa minera</div>
+      <div class="entry-title">Necesito formación o apoyo técnico</div>
+      <div class="entry-q">"Llevo mi experiencia en minería a tu equipo."</div>
+      <ul class="entry-list">
+        <li>Talleres y relatorías con casos reales de minería</li>
+        <li>Formación de equipos geológicos en terreno</li>
+        <li>Procedimientos y protocolos técnicos aplicados</li>
+        <li>Apoyo a propuestas y programas de formación</li>
+      </ul>
+      <a class="entry-cta" href="mailto:fpontigoc@outlook.com?subject=Consulta%20formación%20y%20docencia%20geológica">✉️ Consultar disponibilidad</a>
+    </div>
+
   </div>
 
   <!-- DOS COLUMNAS -->
@@ -279,7 +342,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
         })();
       </script>
       <div>
-        <div class="quien-bio">Veintidós años en geología minera — ciclo completo: exploración, desarrollo y operaciones, rajo y subterráneo. Pórfidos, skarn, vetas y exóticos; Cu, Au, Ag, Mo, Fe y Co en distintos contextos metalogenéticos.<br><br>Con eso, construyo el mapa completo que los datos solos no arman: integrar geología, geotécnica, geometalurgia, geoestadística y QA/QC para leer un proyecto como un todo — y traducirlo en una decisión concreta.<br><br>Trabajo de forma independiente — sin conflicto de interés — para inversionistas, dueños y equipos que necesitan criterio técnico con fundamento real. Y transfiero ese conocimiento a personas y equipos que quieren fortalecer su capacidad.</div>
+        <div class="quien-bio">Veintidós años en geología minera — ciclo completo: exploración, desarrollo y operaciones, rajo y subterráneo. Pórfidos, skarn, vetas y exóticos; Cu, Au, Ag, Mo, Fe y Co en distintos contextos metalogenéticos.<br><br>Con eso, construyo el mapa completo que los datos solos no arman: integrar geología, geotécnica, geometalurgia, geoestadística y QA/QC para leer un proyecto como un todo — y traducirlo en una decisión concreta.<br><br>Trabajo de forma independiente en encargos acotados, revisando previamente alcance, confidencialidad y posibles conflictos de interés, para inversionistas, dueños y equipos que necesitan criterio técnico con fundamento real. Y transfiero ese conocimiento a personas y equipos que quieren fortalecer su capacidad.</div>
         <div class="fortalezas-row">
           <div class="fortaleza-item"><span class="for-icon">🧭</span><div><strong>Visión sistémica</strong><p>Interpreto geología, geotécnica, geometalurgia y datos como un sistema, no como partes separadas.</p></div></div>
           <div class="fortaleza-item"><span class="for-icon">📊</span><div><strong>Evidencia antes que supuestos</strong><p>Cada recomendación tiene respaldo técnico trazable y defendible.</p></div></div>
@@ -321,7 +384,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
   <div class="cta-banner">
     <div class="cta-text">
       <strong>¿Tienes un proyecto, una duda técnica o una decisión que tomar?</strong>
-      <span>La primera conversación no tiene costo — cuéntame qué tienes.</span>
+      <span>La primera conversación no tiene costo · 30 minutos — cuéntame qué tienes.</span>
     </div>
     <div class="cta-btns">
       <a class="cta-btn-primary" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto%20geol%C3%B3gico." target="_blank">📱 Escríbeme por WhatsApp</a>
@@ -336,6 +399,16 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
   <div class="srv-group">
     <div class="srv-group-label">Consultoría Técnica</div>
     <div class="srv-grid">
+
+      <div class="srv-card">
+        <span class="srv-icon">🚦</span>
+        <div class="srv-title">Revisión Técnica Express <span style="font-size:10px;font-weight:700;color:var(--copper);text-transform:uppercase;letter-spacing:.8px;vertical-align:middle;margin-left:6px">Para inversionistas</span></div>
+        <div class="srv-desc">¿El proyecto que estás mirando tiene base real? Revisión independiente con resultado concreto: semáforo técnico, riesgos principales, preguntas para la contraparte y recomendación clara — avanzar, pedir más datos o detener.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Solicitud%3A%20Revisión%20Técnica%20Express">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20una%20Revisión%20Técnica%20Express%20de%20proyecto." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
 
       <div class="srv-card">
         <span class="srv-icon">🔍</span>
@@ -393,12 +466,18 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
   <!-- GRUPO 2: Formación y Docencia -->
   <div class="srv-group">
     <div class="srv-group-label">Formación y Docencia</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:14px">
+      <span style="font-size:11px;font-weight:700;color:var(--slate2)">Módulos disponibles:</span>
+      <span style="background:var(--light);border:1px solid var(--border);border-radius:4px;padding:3px 11px;font-size:11px;color:var(--slate2)">QA/QC y trazabilidad de datos geológicos</span>
+      <span style="background:var(--light);border:1px solid var(--border);border-radius:4px;padding:3px 11px;font-size:11px;color:var(--slate2)">Geometalurgia mina-planta</span>
+      <span style="background:var(--light);border:1px solid var(--border);border-radius:4px;padding:3px 11px;font-size:11px;color:var(--slate2)">Modelos geológicos y riesgo para decisiones</span>
+    </div>
     <div class="srv-grid">
 
       <div class="srv-card">
         <span class="srv-icon">🎓</span>
         <div class="srv-title">Docencia, Relatorías y Talleres</div>
-        <div class="srv-desc">Formación con casos reales de yacimientos y proyectos mineros — no pizarra y teoría. Para OTEC, universidades y empresas que necesitan que sus equipos suban el nivel.</div>
+        <div class="srv-desc">Formación técnica de alto nivel para OTEC, universidades y empresas mineras: talleres aplicados, relatorías, diseño de procedimientos y protocolos. Experiencia real en proyectos y en aula.</div>
         <div class="srv-btns">
           <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Docencia%2C%20Relator%C3%ADas%20y%20Talleres">✉️ Email</a>
           <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Docencia%2C%20Relator%C3%ADas%20y%20Talleres." target="_blank">📱 Mensaje</a>
@@ -514,4 +593,4 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 <a class="wa-float" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank" aria-label="WhatsApp">📱</a>
 
 </body>
-</html>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
