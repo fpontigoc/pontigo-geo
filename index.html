@@ -17,22 +17,12 @@
 body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);font-size:13px;line-height:1.5}
 
 /* ── NAV ── */
-.topbar{background:var(--slate);padding:0 32px;display:flex;align-items:center;gap:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.25)}
-.brand{color:var(--white);font-size:13px;font-weight:700;padding:14px 0;margin-right:32px;letter-spacing:.3px}
+.topbar{background:var(--slate);padding:0 32px;display:flex;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.brand{color:var(--white);font-size:13px;font-weight:700;padding:14px 0;letter-spacing:.3px}
 .brand span{color:var(--copper2)}
-.nav-btn{background:none;border:none;cursor:pointer;color:rgba(255,255,255,.65);font-size:12.5px;font-weight:500;padding:14px 20px;border-bottom:3px solid transparent;transition:all .2s;letter-spacing:.2px}
-.nav-btn:hover{color:var(--white)}
-.nav-btn.active{color:var(--white);border-bottom-color:var(--copper2)}
 .topbar-right{margin-left:auto;font-size:11px;color:rgba(255,255,255,.45)}
 
-/* ── SECCIONES ── */
-.section{display:none;animation:fadeIn .25s ease}
-.section.active{display:block}
-@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-
-/* ═══════════════════════════════
-   PORTAL PÚBLICO
-═══════════════════════════════ */
+/* ── PORTAL ── */
 .pub-wrap{max-width:960px;margin:0 auto;padding:32px 20px 48px}
 
 /* Hero */
@@ -59,16 +49,25 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .cs-item a{color:var(--copper2);text-decoration:none}
 .cs-icon{font-size:14px}
 
-/* Servicios */
+/* Títulos sección */
 .sec-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--copper);margin-bottom:14px;padding-bottom:6px;border-bottom:2px solid var(--light)}
+
+/* Servicios */
 .srv-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px}
 .srv-icon{font-size:26px;display:block;margin-bottom:6px;line-height:1}
 .srv-card{border:1px solid var(--border);border-radius:7px;padding:14px 16px;background:white}
 .srv-num{font-size:10px;font-weight:700;color:var(--copper);text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px}
 .srv-title{font-size:13px;font-weight:600;margin-bottom:5px}
 .srv-desc{font-size:11.5px;color:var(--gray);margin-bottom:8px;line-height:1.4}
-.srv-cta{display:inline-flex;align-items:center;gap:5px;background:var(--slate);color:white;font-size:11px;font-weight:600;padding:4px 12px;border-radius:4px;text-decoration:none;cursor:pointer;transition:background .15s}
+.srv-cta{display:inline-flex;align-items:center;gap:5px;background:var(--slate);color:white;font-size:11px;font-weight:600;padding:4px 12px;border-radius:4px;text-decoration:none;transition:background .15s}
 .srv-cta:hover{background:var(--copper)}
+
+/* Cómo trabajo */
+.como-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px}
+.como-step{background:white;border:1px solid var(--border);border-radius:8px;padding:18px 18px 16px;position:relative;overflow:hidden}
+.como-num{font-size:48px;font-weight:700;color:var(--copper);opacity:.10;position:absolute;top:4px;right:10px;line-height:1;pointer-events:none}
+.como-title{font-size:13px;font-weight:700;color:var(--slate);margin-bottom:6px}
+.como-desc{font-size:11.5px;color:var(--gray);line-height:1.5}
 
 /* Dos columnas */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
@@ -77,190 +76,27 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .col-list ul li::before{content:"▸";color:var(--copper);font-size:10px;flex-shrink:0;margin-top:2px}
 
 /* Sistemas */
-.sys-strip{background:var(--slate);padding:12px 20px;border-radius:8px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:24px}
+.sys-strip{background:var(--slate);padding:12px 20px;border-radius:8px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
 .sys-label{color:var(--copper2);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.5px;margin-right:4px}
 .sys-badge{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:3px 10px;border-radius:4px;color:rgba(255,255,255,.85);font-size:11px;font-weight:500}
 
 /* Footer */
-.pub-footer{border-top:1px solid var(--border);padding:14px 0 0;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--gray)}
-.pub-footer a.cta{background:var(--copper);color:white;padding:8px 20px;border-radius:5px;font-weight:600;text-decoration:none;font-size:12px}
+.pub-footer{border-top:1px solid var(--border);padding:18px 0 0;margin-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--gray)}
+.pub-footer a.cta{background:var(--copper);color:white;padding:10px 24px;border-radius:5px;font-weight:700;text-decoration:none;font-size:13px}
+.pub-footer a.cta:hover{background:var(--copper2)}
 
-/* ═══════════════════════════════
-   PIPELINE PRIVADO
-═══════════════════════════════ */
-.pip-wrap{max-width:1200px;margin:0 auto;padding:24px 20px 48px}
-.pip-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px}
-.pip-header h2{font-size:18px;font-weight:700}
-.pip-header p{font-size:12px;color:var(--gray);margin-top:2px}
-
-/* Stats */
-.stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
-.stat{background:white;border:1px solid var(--border);border-radius:8px;padding:12px 18px;min-width:120px;text-align:center}
-.stat-num{font-size:22px;font-weight:700;color:var(--slate)}
-.stat-num.a{color:var(--green)}.stat-num.b{color:var(--yellow)}.stat-num.c{color:var(--red)}
-.stat-label{font-size:10.5px;color:var(--gray);margin-top:2px}
-
-/* Filtros */
-.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
-.filter-label{font-size:11px;font-weight:600;color:var(--gray)}
-select.flt{border:1px solid var(--border);border-radius:5px;padding:5px 10px;font-size:12px;background:white;color:var(--slate);cursor:pointer}
-.btn-reset{background:none;border:1px solid var(--border);border-radius:5px;padding:5px 12px;font-size:11.5px;cursor:pointer;color:var(--gray)}
-.btn-reset:hover{background:var(--light)}
-.btn-save-all{background:var(--copper);color:white;border:none;border-radius:5px;padding:6px 16px;font-size:12px;font-weight:600;cursor:pointer;margin-left:auto}
-.btn-save-all:hover{background:var(--copper2)}
-
-/* Tabla */
-.contact-table{width:100%;border-collapse:separate;border-spacing:0}
-.contact-table th{background:var(--slate);color:white;padding:9px 10px;font-size:11px;font-weight:600;text-align:left;border-bottom:2px solid var(--copper)}
-.contact-table th:first-child{border-radius:6px 0 0 0}
-.contact-table th:last-child{border-radius:0 6px 0 0}
-.contact-table td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top;font-size:12px;background:white}
-.contact-table tr:hover td{background:var(--cream)}
-
-.seg-badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10.5px;font-weight:600;white-space:nowrap}
-.seg-edu{background:#EBF5FB;color:#1565C0}
-.seg-pub{background:#E8F8E8;color:#1B5E20}
-.seg-min{background:#FEF3E8;color:#7B3F00}
-.seg-con{background:#F3E5F5;color:#4A148C}
-.seg-inv{background:#FFF9C4;color:#7B6F00}
-
-.prio-a{background:#C8E6C9;color:#1B5E20;display:inline-block;padding:1px 8px;border-radius:4px;font-size:11px;font-weight:700}
-.prio-b{background:#FFF9C4;color:#7B6F00;display:inline-block;padding:1px 8px;border-radius:4px;font-size:11px;font-weight:700}
-.prio-c{background:#FFCCBC;color:#7B2D00;display:inline-block;padding:1px 8px;border-radius:4px;font-size:11px;font-weight:700}
-
-select.status-sel{border:1px solid var(--border);border-radius:4px;padding:3px 6px;font-size:11.5px;background:white;width:100%;cursor:pointer}
-textarea.obs-area{border:1px solid var(--border);border-radius:4px;padding:4px 6px;font-size:11px;width:100%;resize:vertical;min-height:36px;font-family:Arial,sans-serif}
-.accion-txt{font-size:11px;color:var(--slate2);line-height:1.4}
-.dolor-txt{font-size:11px;color:var(--gray);line-height:1.4}
-.inst-name{font-weight:600;font-size:12.5px;color:var(--slate)}
-.contact-name{font-size:11.5px;color:var(--gray);margin-top:1px}
-.saved-dot{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block;margin-left:6px;opacity:0;transition:opacity .4s}
-
-/* Toast */
-.toast{position:fixed;bottom:24px;right:24px;background:var(--slate);color:white;padding:10px 20px;border-radius:8px;font-size:12.5px;font-weight:500;z-index:999;opacity:0;transform:translateY(10px);transition:all .3s;pointer-events:none;border-left:4px solid var(--copper)}
-.toast.show{opacity:1;transform:translateY(0)}
-
-@media(max-width:640px){.srv-grid{grid-template-columns:1fr}}
-@media(max-width:640px){.hero{flex-direction:column}.srv-grid,.two-col{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.srv-grid,.como-grid,.two-col{grid-template-columns:1fr}.hero{flex-direction:column}}
 @media print{.topbar{display:none}.pub-wrap{padding:0}}
-
-/* ── PIN OVERLAY ── */
-#pin-overlay{display:none;position:fixed;inset:0;background:rgba(27,45,62,.7);z-index:200;align-items:center;justify-content:center}
-.pin-box{background:white;border-radius:10px;padding:32px 36px;width:320px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,.25)}
-.pin-box h3{font-size:16px;font-weight:700;color:var(--slate);margin-bottom:6px}
-.pin-box p{font-size:12px;color:var(--gray);margin-bottom:18px}
-#pin-input{width:100%;border:2px solid var(--border);border-radius:6px;padding:10px 14px;font-size:16px;text-align:center;letter-spacing:4px;outline:none;color:var(--slate)}
-#pin-input:focus{border-color:var(--copper)}
-#pin-error{display:none;color:var(--red);font-size:11.5px;margin-top:8px}
-.pin-btns{display:flex;gap:10px;margin-top:16px}
-.pin-btns button{flex:1;padding:9px;border-radius:5px;border:none;cursor:pointer;font-size:13px;font-weight:600}
-.pin-ok{background:var(--copper);color:white}.pin-ok:hover{background:var(--copper2)}
-.pin-cancel{background:var(--light);color:var(--slate)}.pin-cancel:hover{background:var(--border)}
-
-/* ── META ECONÓMICA ── */
-.meta-eco{background:white;border:1px solid var(--border);border-radius:10px;padding:16px 20px;margin-bottom:18px}
-.meta-eco-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--copper);margin-bottom:12px}
-.meta-eco-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-.meta-kpi{background:var(--cream);border:1px solid var(--border);border-radius:7px;padding:10px 16px;text-align:center;min-width:110px}
-.meta-kpi-val{font-size:18px;font-weight:700;color:var(--slate)}
-.meta-kpi-val.green{color:var(--green)}
-.meta-kpi-val.copper{color:var(--copper)}
-.meta-kpi-val.blue{color:var(--blue)}
-.meta-kpi-lab{font-size:10px;color:var(--gray);margin-top:2px}
-.meta-progress-wrap{flex:1;min-width:200px}
-.meta-progress-label{display:flex;justify-content:space-between;font-size:11px;color:var(--gray);margin-bottom:5px}
-.meta-progress-track{background:var(--light);border-radius:20px;height:12px;overflow:hidden}
-.meta-progress-fill{height:100%;background:linear-gradient(90deg,var(--copper),var(--copper2));border-radius:20px;transition:width .5s ease;min-width:0}
-.meta-goal-edit{background:none;border:none;cursor:pointer;font-size:11px;color:var(--copper);text-decoration:underline;padding:0 4px}
-.meta-goal-edit:hover{color:var(--copper2)}
-
-/* ── MONTO INPUT ── */
-input.monto-input{border:1px solid var(--border);border-radius:4px;padding:3px 6px;font-size:12px;width:80px;text-align:right;background:var(--cream);color:var(--slate);font-family:Arial,sans-serif}
-input.monto-input:focus{border-color:var(--copper);outline:none;background:white}
-
-/* ═══════════════════════════════
-   FINANZAS PERSONALES
-═══════════════════════════════ */
-.fin-wrap{max-width:900px;margin:0 auto;padding:28px 20px 60px}
-.fin-sec{background:white;border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:18px}
-.fin-sec-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--copper);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--light)}
-/* KPI boxes */
-.kpi-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px}
-.kpi{background:var(--cream);border:1px solid var(--border);border-radius:8px;padding:12px 18px;flex:1;min-width:140px;text-align:center}
-.kpi-val{font-size:22px;font-weight:700;color:var(--slate)}
-.kpi-val.green{color:var(--green)}.kpi-val.copper{color:var(--copper)}.kpi-val.red{color:var(--red)}.kpi-val.blue{color:var(--blue)}
-.kpi-lab{font-size:10.5px;color:var(--gray);margin-top:3px}
-/* Badges */
-.badge{display:inline-block;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:600}
-.badge-green{background:var(--green-bg);color:var(--green)}.badge-yellow{background:var(--yellow-bg);color:var(--yellow)}
-.badge-red{background:var(--red-bg);color:var(--red)}.badge-blue{background:var(--blue-bg);color:var(--blue)}.badge-gray{background:var(--light);color:var(--gray)}
-/* Alertas */
-.nota{background:var(--yellow-bg);border-left:4px solid var(--yellow);padding:10px 14px;border-radius:0 6px 6px 0;font-size:12px;margin:12px 0}
-.nota strong{color:var(--yellow)}
-.fin-info{background:var(--blue-bg);border-left:4px solid var(--blue);padding:10px 14px;border-radius:0 6px 6px 0;font-size:12px;margin:12px 0}
-.fin-ok{background:var(--green-bg);border-left:4px solid var(--green);padding:10px 14px;border-radius:0 6px 6px 0;font-size:12px;margin:12px 0}
-/* Tabla financiera */
-table.dtable{width:100%;border-collapse:collapse;font-size:12.5px}
-table.dtable th{background:var(--slate);color:white;padding:8px 12px;text-align:left;font-size:11px;font-weight:600}
-table.dtable th:first-child{border-radius:6px 0 0 0}table.dtable th:last-child{border-radius:0 6px 0 0}
-table.dtable td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
-table.dtable tr:last-child td{border-bottom:none}table.dtable tr:hover td{background:var(--cream)}
-table.dtable td.right{text-align:right;font-weight:600}table.dtable td.center{text-align:center}
-/* Árbol de decisión */
-.decision-tree{display:flex;flex-direction:column;gap:10px;margin-top:8px}
-.dt-node{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;border-radius:8px;border:1px solid var(--border)}
-.dt-ico{font-size:20px;flex-shrink:0;margin-top:2px}
-.dt-text strong{font-size:13px;display:block;margin-bottom:2px}.dt-text span{font-size:11.5px;color:var(--gray)}
-.dt-node.dt-green{background:var(--green-bg);border-color:#86EFAC}
-.dt-node.dt-yellow{background:var(--yellow-bg);border-color:#FDE68A}
-.dt-node.dt-blue{background:var(--blue-bg);border-color:#BFDBFE}
-/* APV */
-.apv-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:4px}
-.apv-box{border:1px solid var(--border);border-radius:8px;padding:16px 18px}
-.apv-box.winner{border-color:var(--green);border-width:2px;background:var(--green-bg)}
-.apv-box-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;color:var(--slate)}
-.apv-row{display:flex;justify-content:space-between;padding:4px 0;font-size:12.5px;border-bottom:1px solid var(--light)}
-.apv-row:last-child{border-bottom:none;font-weight:700;font-size:13px;padding-top:8px}
-.apv-winner-badge{background:var(--green);color:white;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle}
-/* Slider */
-.slider-wrap{margin:14px 0 6px}
-.slider-wrap label{font-size:12px;color:var(--gray);display:block;margin-bottom:6px}
-input[type=range]{width:100%;accent-color:var(--copper)}
-.slider-val{font-size:18px;font-weight:700;color:var(--copper);display:inline-block;min-width:90px}
-@media(max-width:600px){.kpi-row{flex-direction:column}.apv-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
-<!-- PIN MODAL -->
-<div id="pin-overlay">
-  <div class="pin-box">
-    <h3>🔒 Acceso restringido</h3>
-    <p id="pin-desc">Ingresa tu PIN para acceder al área privada</p>
-    <input id="pin-input" type="password" placeholder="••••••••" maxlength="20"
-           onkeydown="if(event.key==='Enter')submitPin()">
-    <div id="pin-error">PIN incorrecto. Intenta nuevamente.</div>
-    <div class="pin-btns">
-      <button class="pin-cancel" onclick="cancelPin()">Cancelar</button>
-      <button class="pin-ok" onclick="submitPin()">Ingresar →</button>
-    </div>
-  </div>
-</div>
-
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="brand">PONTIGO <span>GEOCIENCIAS</span> APLICADAS</div>
-  <button class="nav-btn active" onclick="showTab('pub')">🌐 Portal Público</button>
-  <button class="nav-btn" onclick="requestPrivate('pip','Mi Pipeline')">📋 Mi Pipeline</button>
-  <button class="nav-btn" onclick="requestPrivate('fin','Mis Finanzas')">💰 Mis Finanzas</button>
   <div class="topbar-right">Copiapó · Atacama · 2026</div>
 </div>
 
-<!-- TOAST -->
-<div class="toast" id="toast"></div>
-
-<!-- ═══════════ PORTAL PÚBLICO ═══════════ -->
-<div class="section active" id="sec-pub">
 <div class="pub-wrap">
 
   <!-- HERO -->
@@ -269,7 +105,7 @@ input[type=range]{width:100%;accent-color:var(--copper)}
       <div class="hero-badge">Pontigo Geociencias Aplicadas</div>
       <div class="hero-name">Francisco Javier Pontigo Cortés</div>
       <div class="hero-subtitle">Geólogo Senior · Consultor Independiente · Copiapó, Región de Atacama</div>
-      <div class="hero-tagline">"Antes de perforar más, invertir más o contratar el próximo estudio — necesitas saber exactamente en qué estado técnico está tu proyecto."</div>
+      <div class="hero-tagline">"Tu negocio minero necesita decisiones técnicas correctas — antes de gastar más. Te digo qué tienes, qué vale y cómo proteger tu inversión."</div>
       <div class="hero-tags">
         <span class="htag c">+22 años de experiencia</span>
         <span class="htag">Ciclo minero completo</span>
@@ -281,16 +117,16 @@ input[type=range]{width:100%;accent-color:var(--copper)}
       </div>
     </div>
     <div class="hero-right">
-      <div class="qr-title">Escanea para contactar</div>
+      <div class="qr-title">LinkedIn</div>
       <div id="qrcode"></div>
-      <div class="qr-label">fpontigoc.github.io/pontigo-geo</div>
+      <div class="qr-label">Escanea para conectar</div>
     </div>
   </div>
 
   <!-- CONTACTO -->
   <div class="contact-strip">
     <div class="cs-item"><span class="cs-icon">✉️</span> <a href="mailto:fpontigoc@outlook.com">fpontigoc@outlook.com</a></div>
-    <div class="cs-item"><span class="cs-icon">📱</span> +56 9 9127 9171</div>
+    <div class="cs-item"><span class="cs-icon">📱</span> <a href="https://wa.me/56991279171" target="_blank" style="color:var(--copper2)">+56 9 9127 9171</a></div>
     <div class="cs-item"><span class="cs-icon">🔗</span> <a href="https://www.linkedin.com/in/francisco-javier-pontigo-cortes-20816117/" target="_blank">LinkedIn</a></div>
     <div class="cs-item"><span class="cs-icon">📍</span> Copiapó, Región de Atacama</div>
   </div>
@@ -298,16 +134,107 @@ input[type=range]{width:100%;accent-color:var(--copper)}
   <!-- SERVICIOS -->
   <div class="sec-title">Servicios Profesionales</div>
   <div class="srv-grid">
-    <div class="srv-card"><span class="srv-icon">🔍</span><div class="srv-num">Servicio 1</div><div class="srv-title">Diagnóstico Técnico Senior</div><div class="srv-desc">¿Tus datos alcanzan para el siguiente paso? Te digo qué tienes, qué vale y qué falta — antes de gastar más.</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
-    <div class="srv-card"><span class="srv-icon">✅</span><div class="srv-num">Servicio 2</div><div class="srv-title">QA/QC y Trazabilidad de Datos</div><div class="srv-desc">Identifica qué datos son confiables y cuáles no, antes de tomar decisiones basadas en información con errores o vacíos.</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
-    <div class="srv-card"><span class="srv-icon">🗺️</span><div class="srv-num">Servicio 3</div><div class="srv-title">Revisión Crítica de Modelos y Campañas</div><div class="srv-desc">Segunda mirada independiente sobre tu modelo o campaña. ¿Tiene soporte real o hay supuestos que no resistirían una auditoría?</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
-    <div class="srv-card"><span class="srv-icon">⚗️</span><div class="srv-num">Servicio 4</div><div class="srv-title">Geometalurgia Aplicada</div><div class="srv-desc">Conecta tus resultados de laboratorio con la realidad geológica. Evita pruebas que no representan tu yacimiento.</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
-    <div class="srv-card"><span class="srv-icon">📋</span><div class="srv-num">Servicio 5</div><div class="srv-title">Apoyo a Propuestas y Licitaciones</div><div class="srv-desc">Revisión técnica de tu propuesta antes de presentarla. Alcance claro, sin prometer lo que no puedes cumplir.</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
-    <div class="srv-card"><span class="srv-icon">🎓</span><div class="srv-num">Servicio 6</div><div class="srv-title">Docencia, Relatorías y Talleres</div><div class="srv-desc">Formación aplicada para universidades, OTEC y empresas. Casos reales de yacimiento, mina y planta — no solo teoría.</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
-    <div class="srv-card"><span class="srv-icon">⛏️</span><div class="srv-num">Servicio 7</div><div class="srv-title">Visita Técnica – Pequeña Minería</div><div class="srv-desc">Voy a tu faena, reviso el terreno y tus antecedentes, y te digo qué hacer — y qué no — antes del siguiente gasto.</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
-    <div class="srv-card"><span class="srv-icon">🏛️</span><div class="srv-num">Servicio 8</div><div class="srv-title">Apoyo a Programas de Fomento</div><div class="srv-desc">Apoyo técnico para Seremías, GORE y organismos que necesitan ordenar brechas y priorizar acciones en la pequeña minería.</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
-    <div class="srv-card"><span class="srv-icon">👥</span><div class="srv-num">Servicio 9</div><div class="srv-title">Formación de Equipos Geológicos</div><div class="srv-desc">Cartillas, protocolos QA/QC y entrenamiento en terreno para que tu equipo opere con estándares desde el primer día de campaña.</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
-    <div class="srv-card"><span class="srv-icon">🔭</span><div class="srv-num">Servicio 10</div><div class="srv-title">Exploración Básica y Evaluación de Prospectos</div><div class="srv-desc">Reconocimiento geológico de sitio, interpretación de geoquímica (suelos, roca, sedimentos, ICP), geofísica (magnetometría, IP, CSAMT, gravimetría) e interpretación estructural de fallas y controles mineralizadores. Definición y priorización de targets antes de comprometer presupuesto en sondajes.</div><a class="srv-cta" href="mailto:fpontigoc@outlook.com">✉ Solicitar cotización</a></div>
+
+    <div class="srv-card">
+      <span class="srv-icon">🔍</span>
+      <div class="srv-num">Servicio 1</div>
+      <div class="srv-title">Diagnóstico Técnico Senior</div>
+      <div class="srv-desc">¿Vale la pena seguir invirtiendo en este yacimiento? Te doy una respuesta clara: qué tienes, qué vale y qué falta — antes de comprometer más presupuesto.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+    <div class="srv-card">
+      <span class="srv-icon">✅</span>
+      <div class="srv-num">Servicio 2</div>
+      <div class="srv-title">QA/QC y Trazabilidad de Datos</div>
+      <div class="srv-desc">Datos con errores = decisiones equivocadas = plata perdida. Reviso la calidad de tu información antes de que el error te cueste caro.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+    <div class="srv-card">
+      <span class="srv-icon">🗺️</span>
+      <div class="srv-num">Servicio 3</div>
+      <div class="srv-title">Revisión Crítica de Modelos y Campañas</div>
+      <div class="srv-desc">¿Tu modelo aguanta un due diligence? Una segunda mirada independiente puede protegerte de comprometerte con un supuesto que no se sostiene.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+    <div class="srv-card">
+      <span class="srv-icon">⚗️</span>
+      <div class="srv-num">Servicio 4</div>
+      <div class="srv-title">Geometalurgia Aplicada</div>
+      <div class="srv-desc">Pruebas de laboratorio mal diseñadas son plata tirada. Te digo qué vale testear y qué no — antes de contratar el ensayo.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+    <div class="srv-card">
+      <span class="srv-icon">📋</span>
+      <div class="srv-num">Servicio 5</div>
+      <div class="srv-title">Apoyo a Propuestas y Licitaciones</div>
+      <div class="srv-desc">Una propuesta con fallas técnicas puede costarte el contrato o comprometerte en algo que no puedes cumplir. La reviso antes de que salga.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+    <div class="srv-card">
+      <span class="srv-icon">🎓</span>
+      <div class="srv-num">Servicio 6</div>
+      <div class="srv-title">Docencia, Relatorías y Talleres</div>
+      <div class="srv-desc">Formación con casos reales de mina — no pizarra y teoría. Para OTEC, universidades y empresas que necesitan que sus equipos suban el nivel.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+    <div class="srv-card">
+      <span class="srv-icon">⛏️</span>
+      <div class="srv-num">Servicio 7</div>
+      <div class="srv-title">Visita Técnica – Pequeña Minería</div>
+      <div class="srv-desc">Voy a tu faena. En una visita sabes más que en meses de duda: si el yacimiento tiene futuro económico, qué hacer primero y dónde no gastar.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+    <div class="srv-card">
+      <span class="srv-icon">🏛️</span>
+      <div class="srv-num">Servicio 8</div>
+      <div class="srv-title">Apoyo a Programas de Fomento</div>
+      <div class="srv-desc">Para Seremías, GORE y programas de fomento que necesitan criterio técnico real para priorizar recursos en la pequeña minería.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+    <div class="srv-card">
+      <span class="srv-icon">👥</span>
+      <div class="srv-num">Servicio 9</div>
+      <div class="srv-title">Formación de Equipos Geológicos</div>
+      <div class="srv-desc">Un equipo que no mide bien pierde datos y hace mala geología. Protocolos, cartillas y entrenamiento en terreno — para que la campaña rinda desde el día uno.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+    <div class="srv-card">
+      <span class="srv-icon">🔭</span>
+      <div class="srv-num">Servicio 10</div>
+      <div class="srv-title">Exploración Básica y Evaluación de Prospectos</div>
+      <div class="srv-desc">¿Vale la pena explorar este prospecto o es un gasto sin retorno? Geoquímica, geofísica e interpretación estructural para decidir antes de comprometer presupuesto en sondajes.</div>
+      <a class="srv-cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos</a>
+    </div>
+
+  </div>
+
+  <!-- CÓMO TRABAJO -->
+  <div class="sec-title">Cómo trabajo</div>
+  <div class="como-grid">
+    <div class="como-step">
+      <div class="como-num">01</div>
+      <div class="como-title">Conversación sin costo</div>
+      <div class="como-desc">Me cuentas qué tienes y qué necesitas saber. En 30 minutos defines si puedo ayudarte — sin compromiso ni presupuesto previo.</div>
+    </div>
+    <div class="como-step">
+      <div class="como-num">02</div>
+      <div class="como-title">Propuesta concreta</div>
+      <div class="como-desc">Alcance claro, entregables definidos y precio fijo. Sabes exactamente qué recibes y cuándo — sin sorpresas al final.</div>
+    </div>
+    <div class="como-step">
+      <div class="como-num">03</div>
+      <div class="como-title">Criterio, no volumen</div>
+      <div class="como-desc">No un informe de 200 páginas. Una opinión técnica directa con las recomendaciones que puedes aplicar en tu negocio.</div>
+    </div>
   </div>
 
   <!-- DOS COLUMNAS -->
@@ -315,23 +242,23 @@ input[type=range]{width:100%;accent-color:var(--copper)}
     <div class="col-list">
       <div class="sec-title">¿A quién ayudo?</div>
       <ul>
-        <li>Pequeños y medianos mineros que no saben si sus datos alcanzan para el siguiente paso</li>
-        <li>Proyectos que necesitan ordenar información antes de contratar estudios costosos</li>
-        <li>Empresas con datos históricos de calidad desconocida o bases desordenadas</li>
-        <li>Consultoras que necesitan refuerzo técnico puntual o segunda opinión</li>
-        <li>Instituciones de educación y capacitación (INACAP, universidades, OTEC)</li>
-        <li>Organismos públicos y programas de fomento a la pequeña minería</li>
+        <li>Pequeños y medianos mineros que quieren saber si su operación tiene futuro económico</li>
+        <li>Inversionistas que necesitan saber si un proyecto minero vale lo que piden por él</li>
+        <li>Empresas con datos históricos de calidad incierta que deben tomar decisiones pronto</li>
+        <li>Consultoras que necesitan refuerzo técnico puntual o una segunda opinión independiente</li>
+        <li>Universidades, OTEC y empresas que quieren formación aplicada con casos reales</li>
+        <li>Organismos públicos y programas de fomento a la pequeña y mediana minería</li>
       </ul>
     </div>
     <div class="col-list">
-      <div class="sec-title">¿Qué gana tu organización?</div>
+      <div class="sec-title">¿Qué gana tu negocio?</div>
       <ul>
-        <li>Sabes en qué estado técnico real está tu proyecto antes de gastar más</li>
-        <li>Evitas pagar estudios costosos con datos que aún no están listos</li>
-        <li>Priorizas con criterio: qué corregir, qué complementar, qué ignorar</li>
-        <li>Puedes conversar mejor con ENAMI, Seremi, laboratorios o inversionistas</li>
-        <li>Equipos entrenados que cometen menos errores desde el primer día en terreno</li>
-        <li>Opinión técnica independiente, objetiva — no vinculada a ningún proveedor</li>
+        <li>Sabes si tu inversión tiene base real — antes de comprometer más dinero</li>
+        <li>Evitas pagar estudios costosos con datos que todavía no están listos</li>
+        <li>Priorizas con criterio: qué corregir, qué complementar, qué no tocar</li>
+        <li>Puedes negociar mejor con ENAMI, inversionistas, laboratorios o compradores</li>
+        <li>Equipos que cometen menos errores y generan información de mejor calidad</li>
+        <li>Una opinión técnica objetiva — no vinculada a ningún proveedor ni interés</li>
       </ul>
     </div>
   </div>
@@ -350,7 +277,7 @@ input[type=range]{width:100%;accent-color:var(--copper)}
     <span class="sys-badge">Cobre exótico</span>
     <span class="sys-badge">Cu-Mo-Co</span>
   </div>
-  <div class="sys-strip" style="margin-top:8px;background:var(--slate2)">
+  <div class="sys-strip" style="background:var(--slate2);margin-bottom:24px">
     <span class="sys-label">Estilos de mineralización reconocidos:</span>
     <span class="sys-badge">Brecha de turmalina</span>
     <span class="sys-badge">Brecha de sulfuros</span>
@@ -369,568 +296,27 @@ input[type=range]{width:100%;accent-color:var(--copper)}
   <!-- FOOTER -->
   <div class="pub-footer">
     <div style="font-size:11px;color:var(--gray);max-width:500px;font-style:italic">Servicios prestados en forma independiente. Alcance, entregables y precio definidos en cotización formal. No incluye firma de Persona Competente ni declaración de recursos certificados.</div>
-    <a class="cta" href="mailto:fpontigoc@outlook.com">Contactar ahora →</a>
+    <a class="cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos →</a>
   </div>
 
 </div>
-</div><!-- /pub -->
-
-<!-- ═══════════ PIPELINE PRIVADO ═══════════ -->
-<div class="section" id="sec-pip">
-<div class="pip-wrap">
-
-  <div class="pip-header">
-    <div>
-      <h2>Mi Pipeline de Contactos</h2>
-      <p>Seguimiento de oportunidades · Pontigo Geociencias Aplicadas · Atacama 2026</p>
-    </div>
-  </div>
-
-  <!-- STATS -->
-  <div class="stats" id="stats-bar"></div>
-
-  <!-- META ECONÓMICA -->
-  <div class="meta-eco">
-    <div class="meta-eco-title">📊 Meta Económica Mensual</div>
-    <div class="meta-eco-row">
-      <div class="meta-kpi">
-        <div class="meta-kpi-val" id="meco-goal">$0.0M</div>
-        <div class="meta-kpi-lab">Meta mes <button class="meta-goal-edit" onclick="editMetaGoal()" title="Editar meta">✎</button></div>
-      </div>
-      <div class="meta-kpi">
-        <div class="meta-kpi-val green" id="meco-closed">$0.0M</div>
-        <div class="meta-kpi-lab">✅ Cerrado</div>
-      </div>
-      <div class="meta-kpi">
-        <div class="meta-kpi-val copper" id="meco-prop">$0.0M</div>
-        <div class="meta-kpi-lab">📄 En propuesta</div>
-      </div>
-      <div class="meta-kpi">
-        <div class="meta-kpi-val blue" id="meco-pipe">$0.0M</div>
-        <div class="meta-kpi-lab">🔵 Pipeline total</div>
-      </div>
-      <div class="meta-progress-wrap">
-        <div class="meta-progress-label">
-          <span>Progreso hacia meta</span>
-          <span id="meco-pct">0%</span>
-        </div>
-        <div class="meta-progress-track">
-          <div class="meta-progress-fill" id="meco-fill" style="width:0%"></div>
-        </div>
-        <div style="font-size:10px;color:var(--gray2);margin-top:5px">💡 Ingresa montos estimados en la columna "$M" de la tabla para activar este tracker</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FILTROS -->
-  <div class="filters">
-    <span class="filter-label">Filtrar:</span>
-    <select class="flt" id="flt-seg" onchange="renderTable()">
-      <option value="">Todos los segmentos</option>
-      <option>Educación / OTEC</option>
-      <option>Organismo Público</option>
-      <option>Pequeña/Med. Minería</option>
-      <option>Consultora / Proveedor</option>
-      <option>Inversionista / Legal</option>
-    </select>
-    <select class="flt" id="flt-prio" onchange="renderTable()">
-      <option value="">Todas las prioridades</option>
-      <option>A</option><option>B</option><option>C</option>
-    </select>
-    <select class="flt" id="flt-est" onchange="renderTable()">
-      <option value="">Todos los estados</option>
-      <option>Pendiente</option><option>Contactado</option>
-      <option>Reunión agendada</option><option>Propuesta enviada</option>
-      <option>Cerrado</option><option>Descartado</option>
-    </select>
-    <button class="btn-reset" onclick="resetFilters()">Limpiar filtros</button>
-    <button class="btn-save-all" onclick="saveAll()">💾 Guardar cambios</button>
-  </div>
-
-  <!-- TABLA -->
-  <div style="overflow-x:auto">
-    <table class="contact-table" id="contact-table">
-      <thead>
-        <tr>
-          <th style="width:40px">#</th>
-          <th style="width:130px">Segmento</th>
-          <th style="width:200px">Institución / Contacto</th>
-          <th style="width:80px">Prioridad</th>
-          <th style="width:150px">Estado</th>
-          <th style="width:95px">$M CLP<br><span style="font-weight:normal;font-size:9px;opacity:.8">estimado</span></th>
-          <th>Dolor · Próxima Acción</th>
-          <th style="width:240px">Observaciones</th>
-        </tr>
-      </thead>
-      <tbody id="table-body"></tbody>
-    </table>
-  </div>
-
-</div>
-</div><!-- /pip -->
-
-<!-- ═══════════ MIS FINANZAS (privado) ═══════════ -->
-<div class="section" id="sec-fin">
-<div class="fin-wrap">
-
-  <div style="background:var(--slate);color:white;padding:18px 28px;border-radius:10px;margin-bottom:22px;display:flex;justify-content:space-between;align-items:center">
-    <div>
-      <div style="font-size:17px;font-weight:700">Decisión Financiera Personal</div>
-      <div style="font-size:11.5px;color:rgba(255,255,255,.55);margin-top:3px">Geoinnova + Pontigo Geociencias Aplicadas · Estructura tributaria y APV</div>
-    </div>
-    <div style="font-size:11px;color:var(--copper2);text-align:right">Datos reales<br>Liquidación 04-2026 · F22 AT2026</div>
-  </div>
-
-  <!-- SECCIÓN 1: SITUACIÓN BASE -->
-  <div class="fin-sec">
-    <div class="fin-sec-title">1 · Tu situación base</div>
-    <div class="kpi-row">
-      <div class="kpi"><div class="kpi-val">$4,92M</div><div class="kpi-lab">Líquido mensual Geoinnova (confirmado)</div></div>
-      <div class="kpi"><div class="kpi-val red">+$2,0M</div><div class="kpi-lab">Meta incremental (consultoría)</div></div>
-      <div class="kpi"><div class="kpi-val green">$6,92M</div><div class="kpi-lab">Meta líquido total mensual</div></div>
-      <div class="kpi"><div class="kpi-val copper">$2,8–3,0M</div><div class="kpi-lab">Bruto necesario (boleta) para llegar</div></div>
-    </div>
-    <div class="fin-info">💡 La actividad independiente debe generar <strong>$2,8–3,0M brutos/mes</strong> en boletas para llegar a los $6,92M líquidos totales. Equivale a 1 retainer senior o 2 diagnósticos de $1,5M.</div>
-  </div>
-
-  <!-- SECCIÓN 2: BOLETA VS SpA -->
-  <div class="fin-sec">
-    <div class="fin-sec-title">2 · Boleta de honorarios vs Empresa (SpA) — para el ingreso adicional</div>
-    <div class="nota">⚠️ <strong>Dato contra-intuitivo:</strong> En tu caso, la SpA <em>no</em> reduce impuestos sobre los ingresos adicionales. Tu tasa incremental como SpA (27,6%) es mayor que como boleta (18,5%), porque el sueldo Geoinnova ya consume los tramos bajos del Global Complementario. La SpA conviene por otras razones, no por ahorro tributario inmediato.</div>
-    <table class="dtable" style="margin-top:12px">
-      <thead><tr>
-        <th>Escenario</th><th class="right">Bruto/mes</th><th class="right">Neto/mes</th>
-        <th class="center">Tasa</th><th class="center">Caja inmediata</th><th>Estado</th>
-      </tr></thead>
-      <tbody>
-        <tr>
-          <td><strong>Boleta mínimo técnico</strong><br><span style="font-size:11px;color:var(--gray)">Llega justo a la meta</span></td>
-          <td class="right">$2.452.699</td><td class="right">$2.000.000</td>
-          <td class="center">18,5%</td><td class="center">$2.078.662</td>
-          <td><span class="badge badge-green">✓ Arranque</span></td>
-        </tr>
-        <tr>
-          <td><strong>Boleta recomendada</strong><br><span style="font-size:11px;color:var(--gray)">Con holgura para reserva</span></td>
-          <td class="right">$2.800.000</td><td class="right">$2.273.395</td>
-          <td class="center">18,5%</td><td class="center">$2.373.000</td>
-          <td><span class="badge badge-green">✓ Óptimo</span></td>
-        </tr>
-        <tr>
-          <td><strong>Boleta alta / retainer</strong></td>
-          <td class="right">$3.000.000</td><td class="right">$2.430.835</td>
-          <td class="center">18,5%</td><td class="center">$2.542.500</td>
-          <td><span class="badge badge-blue">↑ Ideal</span></td>
-        </tr>
-        <tr style="background:var(--cream)">
-          <td><strong>SpA mínimo técnico</strong><br><span style="font-size:11px;color:var(--gray)">Solo si hay otras razones</span></td>
-          <td class="right">$2.760.865</td><td class="right">$2.000.000</td>
-          <td class="center">27,6%</td><td class="center">—</td>
-          <td><span class="badge badge-yellow">⚠ Ver sección 3</span></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="fin-ok" style="margin-top:14px">✅ <strong>Conclusión práctica:</strong> Empieza con boleta de honorarios. Factura $2,8–3,0M/mes. Reserva el 25% de lo que recibes para la operación renta de abril. No necesitas SpA los primeros 12–18 meses.</div>
-  </div>
-
-  <!-- SECCIÓN 3: CUÁNDO SpA -->
-  <div class="fin-sec">
-    <div class="fin-sec-title">3 · ¿Cuándo conviene abrir la SpA?</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:14px">La SpA no baja impuestos sobre lo que retiras, pero sí permite estrategias que la boleta no permite:</p>
-    <div class="decision-tree">
-      <div class="dt-node dt-green">
-        <div class="dt-ico">✅</div>
-        <div class="dt-text"><strong>Facturas $5M+/mes de forma estable por 3 meses</strong>
-        <span>Puedes retener utilidades en la empresa al 12,5% (IDPC Pro Pyme) sin retirarlas. Solo tributas el 27% adicional cuando las sacas.</span></div>
-      </div>
-      <div class="dt-node dt-green">
-        <div class="dt-ico">✅</div>
-        <div class="dt-text"><strong>Necesitas subcontratar o tener un colaborador formal</strong>
-        <span>La empresa puede contratar a terceros con contrato, emitir facturas, deducir gastos reales. Persona natural solo puede deducir el 30% presunto.</span></div>
-      </div>
-      <div class="dt-node dt-green">
-        <div class="dt-ico">✅</div>
-        <div class="dt-text"><strong>Un cliente o licitación requiere persona jurídica</strong>
-        <span>CORFO, SERCOTEC, licitaciones públicas y algunos contratos con grandes mandantes exigen RUT empresa.</span></div>
-      </div>
-      <div class="dt-node dt-yellow">
-        <div class="dt-ico">⚠️</div>
-        <div class="dt-text"><strong>No abrir solo por imagen</strong>
-        <span>Contador mensual ($50K–$120K) + declaraciones + IVA mensual no se justifica hasta que hay flujo estable. Una boleta electrónica SII es suficientemente formal para arrancar.</span></div>
-      </div>
-      <div class="dt-node dt-blue">
-        <div class="dt-ico">📅</div>
-        <div class="dt-text"><strong>Regla práctica: evalúa a los 6 meses si llegas a $3M/mes</strong>
-        <span>Si en 6 meses facturas $3M+ de forma consistente, habla con tu contador. Si no, mantén boleta.</span></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECCIÓN 4: APV -->
-  <div class="fin-sec">
-    <div class="fin-sec-title">4 · APV — Ahorro Previsional Voluntario como herramienta tributaria</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:14px">El APV es la herramienta más directa para bajar tu carga tributaria <em>hoy</em>, sin cambiar de estructura jurídica.</p>
-
-    <div class="fin-ok">✅ <strong>Tu contexto real (F22 AT2026 + Liquidación 04-2026):</strong> Ya tienes una deducción hipotecaria de <strong>$6.510.402/año</strong> (art. 55 bis LIR), equivalente a $542.533/mes. Eso reduce tu base imponible anual de ~$66.1M a ~$59.6M y genera una <strong>devolución automática de $1.941.781 en abril</strong>. El APV suma sobre ese beneficio ya existente.</div>
-
-    <div class="nota" style="margin-top:8px">⚠️ <strong>Tu APV anterior fue retirado en 2025</strong> (código 767 del F22: $334.949 impuesto sobre retiro). En AFP Habitat ya tienes la cuenta obligatoria — basta con activar el aporte voluntario.</div>
-
-    <div class="fin-info" style="margin-top:8px">💡 <strong>Timing según canal:</strong><br>
-    • <strong>Vía nómina Geoinnova</strong>: la rebaja se aplica mensualmente al impuesto único → <em>ahorro inmediato cada mes</em>. Hablar con RR.HH. es suficiente.<br>
-    • <strong>Vía AFP/seguradora externo</strong>: el ahorro llega en abril como aumento de la devolución. Más flexible en monto.</div>
-
-    <div class="kpi-row" style="margin:16px 0">
-      <div class="kpi"><div class="kpi-val copper">50 UF/mes</div><div class="kpi-lab">Límite mensual APV ($2.006.010 — UF $40.120)</div></div>
-      <div class="kpi"><div class="kpi-val copper">600 UF/año</div><div class="kpi-lab">Límite anual APV ($24.072.120)</div></div>
-      <div class="kpi"><div class="kpi-val blue">23%</div><div class="kpi-lab">Tramo marginal real (F22 AT2026 confirmado)</div></div>
-    </div>
-
-    <div class="apv-grid">
-      <div class="apv-box">
-        <div class="apv-box-title">Régimen A — Crédito directo 15%</div>
-        <div class="apv-row"><span>Aporte máximo (50 UF)</span><span>$2.006.010</span></div>
-        <div class="apv-row"><span>Crédito tributario (15%)</span><span style="color:var(--green)">-$300.902/mes</span></div>
-        <div class="apv-row"><span>Ahorro anual</span><span style="color:var(--green)">$3.610.818</span></div>
-        <div class="apv-row"><span>Costo neto real</span><span>$1.705.108/mes</span></div>
-        <div class="apv-row"><span><strong>¿Cuándo conviene?</strong></span><span>Tramo &lt;23% — no es tu caso</span></div>
-      </div>
-      <div class="apv-box winner">
-        <div class="apv-box-title">Régimen B — Deducción base imponible <span class="apv-winner-badge">✓ MEJOR PARA TI</span></div>
-        <div class="apv-row"><span>Aporte máximo (50 UF)</span><span>$2.006.010</span></div>
-        <div class="apv-row"><span>Rebaja impuesto (23% confirmado)</span><span style="color:var(--green)">-$461.382/mes</span></div>
-        <div class="apv-row"><span>Ahorro anual</span><span style="color:var(--green)">$5.536.589</span></div>
-        <div class="apv-row"><span>Costo neto real</span><span>$1.544.628/mes</span></div>
-        <div class="apv-row"><span><strong>¿Cuándo conviene?</strong></span><span>Tramo &gt;15% ✓ — tu tramo es 23%</span></div>
-      </div>
-    </div>
-
-    <!-- Simulador interactivo -->
-    <div style="background:var(--cream);border:1px solid var(--border);border-radius:8px;padding:16px 18px;margin-top:14px">
-      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--copper);margin-bottom:10px">Simulador APV — ajusta tu aporte mensual</div>
-      <div class="slider-wrap">
-        <label>Aporte mensual: <span class="slider-val" id="apv-val">$1.000.000</span></label>
-        <input type="range" id="apv-slider" min="100000" max="2006010" step="50000" value="1000000" oninput="updateAPV()">
-      </div>
-      <div class="kpi-row" style="margin-top:10px">
-        <div class="kpi"><div class="kpi-val" id="apv-ahorroA">$150.000</div><div class="kpi-lab">Ahorro/mes Régimen A (15%)</div></div>
-        <div class="kpi"><div class="kpi-val green" id="apv-ahorroB">$230.000</div><div class="kpi-lab">Ahorro/mes Régimen B (23% real)</div></div>
-        <div class="kpi"><div class="kpi-val blue" id="apv-anual">$2.760.000</div><div class="kpi-lab">Ahorro anual Régimen B</div></div>
-        <div class="kpi"><div class="kpi-val copper" id="apv-neto">$770.000</div><div class="kpi-lab">Costo neto real/mes (Rég. B)</div></div>
-      </div>
-    </div>
-
-    <div class="fin-ok" style="margin-top:14px">✅ <strong>Recomendación:</strong> Reactiva APV Régimen B en AFP Habitat. Aporta $500K–$1M/mes al inicio. A <strong>$1M/mes</strong> ahorras <strong>$230K/mes en impuestos = $2,76M/año</strong>. Si lo haces vía nómina Geoinnova, el ahorro es inmediato — sin esperar abril.</div>
-  </div>
-
-  <!-- SECCIÓN 5: RESUMEN -->
-  <div class="fin-sec">
-    <div class="fin-sec-title">5 · Resumen: qué hacer y cuándo</div>
-    <table class="dtable">
-      <thead><tr><th>Etapa</th><th>Acción</th><th>Razón</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><span class="badge badge-green">Ahora</span></td>
-          <td><strong>Emitir boletas de honorarios</strong> por los primeros servicios</td>
-          <td>Sin costo de estructura, tasa 18,5%, caja inmediata al 84,75%</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-green">Ahora</span></td>
-          <td><strong>Reactivar APV Régimen B</strong> en AFP Habitat ($500K–$1M/mes)</td>
-          <td>Reduce impuesto sobre sueldo Geoinnova desde el primer mes. Coordinar con RR.HH. o hacerlo directamente en AFP.</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-blue">Mes 1–2</span></td>
-          <td><strong>Abrir cuenta bancaria separada</strong> para actividad independiente</td>
-          <td>No mezclar flujos. Facilita la declaración de renta de abril.</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-blue">Mes 3–4</span></td>
-          <td><strong>Contratar contador</strong> si facturas $1,5M+ en ese período</td>
-          <td>Optimización cotizaciones, revisión base imponible, APV.</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-yellow">Mes 6+</span></td>
-          <td><strong>Evaluar SpA</strong> si llegas a $3M+/mes estables por 3 meses</td>
-          <td>Solo si hay ventaja operativa: retener utilidades, subcontratar, licitaciones.</td>
-        </tr>
-        <tr>
-          <td><span class="badge badge-yellow">Siempre</span></td>
-          <td><strong>Reservar 25% de boleta</strong> en cuenta aparte para Operación Renta abril</td>
-          <td>Evitar sorpresas. El 15,25% ya retenido es tuyo; el adicional va en abril.</td>
-        </tr>
-      </tbody>
-    </table>
-    <div style="margin-top:14px;font-size:11px;color:var(--gray);font-style:italic">Análisis basado en datos propios reales: Liquidación GeoInnova abril 2026 + F22 AT2026 (SII, folio 302601216). Tramo marginal 23% confirmado. UF $40.120,2. No sustituye asesoría tributaria profesional.</div>
-  </div>
-
-</div>
-</div><!-- /fin -->
 
 <script>
-// ═══════════════════════════════════════
-// DATOS BASE DE CONTACTOS
-// ═══════════════════════════════════════
-const CONTACTS = [
-  {id:1,seg:"Educación / OTEC",inst:"INACAP Copiapó",nombre:"Pablo Sanguinetti",cargo:"Vicerrector de Sede",ciudad:"Copiapó",correo:"",tel:"",web:"portales.inacap.cl/sedes/copiapo",puente:"Institución con Área Minería activa",dolor:"Docentes con experiencia real en yacimientos y QA/QC",accion:"Llamar o enviar one-pager",prio:"A",est:"Pendiente",obs:""},
-  {id:2,seg:"Educación / OTEC",inst:"Universidad de Atacama – Depto. Geología",nombre:"",cargo:"Director Depto. Geología",ciudad:"Copiapó",correo:"",tel:"",web:"uda.cl/ingenieria/geologia",puente:"Universidad estatal, carrera Geología activa",dolor:"Vínculos industria para clases y talleres aplicados",accion:"Contactar vía web + LinkedIn",prio:"A",est:"Pendiente",obs:""},
-  {id:3,seg:"Educación / OTEC",inst:"Universidad de Atacama – Depto. Minas",nombre:"",cargo:"Director Depto. Ingeniería Minas",ciudad:"Copiapó",correo:"",tel:"",web:"uda.cl/ingenieria/departamento-de-ingenieria-en-minas",puente:"Misma universidad, complementario a Geología",dolor:"Experiencia en integración geología-mina-planta",accion:"Coordinar visita junto con Depto. Geología",prio:"A",est:"Pendiente",obs:""},
-  {id:4,seg:"Educación / OTEC",inst:"OTEC Atacama Training (CORPROA)",nombre:"",cargo:"Coordinador OTEC",ciudad:"Copiapó",correo:"",tel:"",web:"corproa.cl/areas-estrategicas/otec",puente:"OTEC acreditado SENCE, presencia en Copiapó y Vallenar",dolor:"Relatores con experiencia real para cursos SENCE",accion:"Consultar catálogo activo y postular como relator",prio:"A",est:"Pendiente",obs:""},
-  {id:5,seg:"Organismo Público",inst:"Seremi Minería Atacama",nombre:"Juan Carlos Salinas Marabolí",cargo:"Seremi de Minería",ciudad:"Copiapó",correo:"",tel:"+56 2 2473 3138",web:"minmineria.cl",puente:"Autoridad regional clave para fomento pequeña minería",dolor:"Apoyo técnico a pequeños mineros sin acceso a consultoras",accion:"Solicitar reunión — plantear apoyo técnico a PAMMA",prio:"A",est:"Pendiente",obs:"Chacabuco 546, Piso 3, Of. 31"},
-  {id:6,seg:"Organismo Público",inst:"SERNAGEOMIN Atacama",nombre:"Franklin Céspedes V.",cargo:"Director Regional",ciudad:"Copiapó",correo:"oficinapartes.atacama@sernageomin.cl",tel:"+56 2 2482 6323",web:"sernageomin.cl",puente:"Conoce operadores pequeña minería y sus brechas técnicas",dolor:"Brechas técnicas frecuentes en operadores artesanales",accion:"Enviar presentación + solicitar reunión informativa",prio:"B",est:"Pendiente",obs:"Manuel Antonio Matta 0264, Copiapó"},
-  {id:7,seg:"Organismo Público",inst:"ENAMI – Planta Manuel Antonio Matta",nombre:"",cargo:"Jefe de Planta / Gerente Regional",ciudad:"Copiapó",correo:"",tel:"",web:"enami.cl",puente:"Planta más grande ENAMI Copiapó, recibe mineral pequeños mineros",dolor:"Proveedores necesitan orientación técnica para mejorar calidad",accion:"Contactar vía ENAMI central o visita directa Colipí 260",prio:"B",est:"Pendiente",obs:""},
-  {id:8,seg:"Organismo Público",inst:"GORE Atacama – Fomento Productivo",nombre:"",cargo:"División Fomento e Industria",ciudad:"Copiapó",correo:"",tel:"",web:"goreatacama.gob.cl",puente:"Financia proyectos PAMMA (>$197M en 2026)",dolor:"Técnicos para evaluar y ejecutar programas de apoyo",accion:"Identificar encargado División Fomento y presentar propuesta",prio:"B",est:"Pendiente",obs:""},
-  {id:9,seg:"Pequeña/Med. Minería",inst:"ASOMICO – Asoc. Minera de Copiapó",nombre:"",cargo:"Presidente",ciudad:"Copiapó",correo:"",tel:"",web:"",puente:"Sede del lanzamiento Política Fomento Pequeña Minería 2025",dolor:"Miembros con información incompleta sin acceso a asesoría",accion:"Contactar directiva — ofrecer charla técnica gratuita",prio:"A",est:"Pendiente",obs:""},
-  {id:10,seg:"Pequeña/Med. Minería",inst:"Sindicato Pirquineros Copiapó",nombre:"Mario Mercado Navea",cargo:"Presidente – Dir. CONFEMIN",ciudad:"Copiapó",correo:"",tel:"",web:"confederacionminera.cl",puente:"Dirigente con visibilidad regional y nacional",dolor:"Pirquineros sin acceso a criterio técnico para decisiones básicas",accion:"Contactar vía CONFEMIN o directo — proponer apoyo técnico",prio:"A",est:"Pendiente",obs:""},
-  {id:11,seg:"Pequeña/Med. Minería",inst:"CONFEMIN – Atacama / Coquimbo",nombre:"Joel Carrizo",cargo:"Presidente Sint. Tierra Amarilla",ciudad:"Tierra Amarilla",correo:"",tel:"",web:"confederacionminera.cl",puente:"Vicepresidente SONAMI, referente regional pequeña minería",dolor:"Agremiados necesitan apoyo técnico para sustentabilidad",accion:"Contactar vía CONFEMIN o LinkedIn",prio:"B",est:"Pendiente",obs:""},
-  {id:12,seg:"Consultora / Proveedor",inst:"GeoEstima",nombre:"",cargo:"Director / Gerente",ciudad:"Santiago / Copiapó",correo:"",tel:"",web:"geoestima.cl",puente:"Consultora geología económica con proyectos en Atacama",dolor:"Refuerzo técnico puntual en región o segunda opinión",accion:"Revisar web + contactar vía LinkedIn para colaboración",prio:"B",est:"Pendiente",obs:""},
-  {id:13,seg:"Consultora / Proveedor",inst:"Servasol Ltda.",nombre:"",cargo:"Gerente / Dirección",ciudad:"Copiapó",correo:"",tel:"",web:"servasol.cl",puente:">30 años en minería, proyectos Chuqui, El Teniente, Maricunga",dolor:"Proyectos requieren criterio geológico para propuestas",accion:"Visita directa Inca de Oro 632, Estación Paipote",prio:"B",est:"Pendiente",obs:""},
-  {id:14,seg:"Consultora / Proveedor",inst:"SRK Consulting Chile",nombre:"",cargo:"Gerente Chile / Director Geología",ciudad:"Santiago",correo:"",tel:"",web:"srk.com/es",puente:"Firma internacional con proyectos activos en Atacama",dolor:"Especialistas locales para proyectos regionales",accion:"Contactar vía LinkedIn — identificar proyectos Atacama",prio:"C",est:"Pendiente",obs:""},
-  {id:15,seg:"Educación / OTEC",inst:"Santo Tomás Copiapó (IP/CFT)",nombre:"",cargo:"Director Sede / Área Minería",ciudad:"Copiapó",correo:"",tel:"",web:"santotomas.cl",puente:"IP con presencia en Copiapó, carreras técnicas minería",dolor:"Docentes aplicados con experiencia en faena",accion:"Contactar sede y consultar área minería",prio:"B",est:"Pendiente",obs:""},
-  {id:16,seg:"Educación / OTEC",inst:"SENCE Atacama",nombre:"",cargo:"Director Regional SENCE",ciudad:"Copiapó",correo:"",tel:"",web:"sence.gob.cl",puente:"Coordina capacitación subsidiada, cursos gratuitos 2026",dolor:"Relatores certificados para cursos minería Atacama",accion:"Consultar postulación como relator SENCE en minería",prio:"B",est:"Pendiente",obs:""},
-  {id:17,seg:"Inversionista / Legal",inst:"SCM Carola–COEMIN",nombre:"",cargo:"Gerente / Director Técnico",ciudad:"Atacama / Coquimbo",correo:"",tel:"",web:"scmcarola.cl",puente:"Arrienda pertenencias a pequeños mineros Atacama/Coquimbo",dolor:"Evalúan proyectos arrendatarios — criterio geológico",accion:"Contactar vía web — proponer apoyo técnico",prio:"C",est:"Pendiente",obs:""},
-];
-
-const ESTADOS = ["Pendiente","Contactado","Reunión agendada","Propuesta enviada","Cerrado","Descartado"];
-const SEG_CLASS = {"Educación / OTEC":"seg-edu","Organismo Público":"seg-pub","Pequeña/Med. Minería":"seg-min","Consultora / Proveedor":"seg-con","Inversionista / Legal":"seg-inv"};
-const PRIO_CLASS = {A:"prio-a",B:"prio-b",C:"prio-c"};
-
-// Cargar estado desde localStorage
-function loadState(){
-  const saved = localStorage.getItem("ponti_pipeline");
-  if(saved){
-    const data = JSON.parse(saved);
-    data.forEach(d=>{
-      const c = CONTACTS.find(x=>x.id===d.id);
-      if(c){c.est=d.est||c.est;c.obs=d.obs||c.obs;c.monto=d.monto||c.monto||0}
-    });
-  }
-}
-
-function saveAll(){
-  const rows = document.querySelectorAll("tr[data-id]");
-  rows.forEach(row=>{
-    const id = parseInt(row.dataset.id);
-    const c = CONTACTS.find(x=>x.id===id);
-    if(c){
-      c.est = row.querySelector(".status-sel").value;
-      c.obs = row.querySelector(".obs-area").value;
-      const mi = row.querySelector(".monto-input");
-      c.monto = mi ? (parseFloat(mi.value)||0) : 0;
-    }
-  });
-  localStorage.setItem("ponti_pipeline", JSON.stringify(CONTACTS.map(c=>({id:c.id,est:c.est,obs:c.obs,monto:c.monto||0}))));
-  showToast("✅ Cambios guardados correctamente");
-  renderStats();
-}
-
-function showToast(msg){
-  const t = document.getElementById("toast");
-  t.textContent = msg;
-  t.classList.add("show");
-  setTimeout(()=>t.classList.remove("show"),2800);
-}
-
-function renderStats(){
-  const a = CONTACTS.filter(c=>c.prio==="A").length;
-  const b = CONTACTS.filter(c=>c.prio==="B").length;
-  const cc = CONTACTS.filter(c=>c.prio==="C").length;
-  const pend = CONTACTS.filter(c=>c.est==="Pendiente").length;
-  const cont = CONTACTS.filter(c=>c.est==="Contactado").length;
-  const reun = CONTACTS.filter(c=>c.est==="Reunión agendada").length;
-  const prop = CONTACTS.filter(c=>c.est==="Propuesta enviada").length;
-  const cerr = CONTACTS.filter(c=>c.est==="Cerrado").length;
-  document.getElementById("stats-bar").innerHTML = `
-    <div class="stat"><div class="stat-num">${CONTACTS.length}</div><div class="stat-label">Total contactos</div></div>
-    <div class="stat"><div class="stat-num a">${a}</div><div class="stat-label">Prioridad A</div></div>
-    <div class="stat"><div class="stat-num b">${b}</div><div class="stat-label">Prioridad B</div></div>
-    <div class="stat"><div class="stat-num c">${cc}</div><div class="stat-label">Prioridad C</div></div>
-    <div class="stat"><div class="stat-num" style="color:var(--gray)">${pend}</div><div class="stat-label">Pendientes</div></div>
-    <div class="stat"><div class="stat-num" style="color:var(--blue)">${cont}</div><div class="stat-label">Contactados</div></div>
-    <div class="stat"><div class="stat-num" style="color:var(--yellow)">${reun}</div><div class="stat-label">Reuniones</div></div>
-    <div class="stat"><div class="stat-num" style="color:var(--copper)">${prop}</div><div class="stat-label">Propuestas</div></div>
-    <div class="stat"><div class="stat-num" style="color:var(--green)">${cerr}</div><div class="stat-label">Cerrados</div></div>
-  `;
-  // Actualizar meta económica
-  updateMetaEco();
-}
-
-const META_KEY = "ponti_meta_goal";
-
-function getMetaGoal(){
-  return parseFloat(localStorage.getItem(META_KEY)||"3.0");
-}
-
-function editMetaGoal(){
-  const current = getMetaGoal();
-  const val = prompt("Meta mensual (en millones CLP):", current);
-  if(val !== null && !isNaN(parseFloat(val))){
-    localStorage.setItem(META_KEY, parseFloat(val).toFixed(1));
-    updateMetaEco();
-  }
-}
-
-function updateMetaEco(){
-  const goal = getMetaGoal();
-  const totalPipe = CONTACTS.filter(c=>c.est!=="Descartado").reduce((s,c)=>s+(c.monto||0),0);
-  const totalProp = CONTACTS.filter(c=>c.est==="Propuesta enviada").reduce((s,c)=>s+(c.monto||0),0);
-  const totalCerr = CONTACTS.filter(c=>c.est==="Cerrado").reduce((s,c)=>s+(c.monto||0),0);
-  const pct = goal > 0 ? Math.min(100, Math.round((totalCerr/goal)*100)) : 0;
-
-  const fmt = v => v > 0 ? `$${v.toFixed(1)}M` : "$0.0M";
-  document.getElementById("meco-goal").textContent = `$${goal.toFixed(1)}M`;
-  document.getElementById("meco-closed").textContent = fmt(totalCerr);
-  document.getElementById("meco-prop").textContent = fmt(totalProp);
-  document.getElementById("meco-pipe").textContent = fmt(totalPipe);
-  document.getElementById("meco-pct").textContent = pct + "%";
-  document.getElementById("meco-fill").style.width = pct + "%";
-}
-
-function renderTable(){
-  const segF = document.getElementById("flt-seg").value;
-  const prioF = document.getElementById("flt-prio").value;
-  const estF = document.getElementById("flt-est").value;
-
-  // Sync state from DOM before re-render
-  document.querySelectorAll("tr[data-id]").forEach(row=>{
-    const id = parseInt(row.dataset.id);
-    const c = CONTACTS.find(x=>x.id===id);
-    if(c){
-      c.est=row.querySelector(".status-sel").value;
-      c.obs=row.querySelector(".obs-area").value;
-      const mi=row.querySelector(".monto-input");
-      if(mi)c.monto=parseFloat(mi.value)||0;
-    }
-  });
-
-  const filtered = CONTACTS.filter(c=>
-    (!segF || c.seg===segF) &&
-    (!prioF || c.prio===prioF) &&
-    (!estF || c.est===estF)
-  );
-
-  const tbody = document.getElementById("table-body");
-  tbody.innerHTML = filtered.map(c=>`
-    <tr data-id="${c.id}">
-      <td style="text-align:center;font-weight:700;color:var(--copper);font-size:12px">${c.id}</td>
-      <td><span class="seg-badge ${SEG_CLASS[c.seg]||''}">${c.seg}</span></td>
-      <td>
-        <div class="inst-name">${c.inst}</div>
-        ${c.nombre?`<div class="contact-name">${c.nombre}</div>`:''}
-        ${c.cargo?`<div class="contact-name" style="color:var(--gray2)">${c.cargo}</div>`:''}
-        ${c.correo?`<div class="contact-name"><a href="mailto:${c.correo}" style="color:var(--copper)">${c.correo}</a></div>`:''}
-        ${c.tel?`<div class="contact-name">${c.tel}</div>`:''}
-      </td>
-      <td style="text-align:center"><span class="${PRIO_CLASS[c.prio]||''}">${c.prio}</span></td>
-      <td>
-        <select class="status-sel">
-          ${ESTADOS.map(e=>`<option${c.est===e?' selected':''}>${e}</option>`).join('')}
-        </select>
-      </td>
-      <td style="text-align:right;vertical-align:middle">
-        <input type="number" class="monto-input" value="${c.monto||''}" min="0" step="0.1" placeholder="—">
-      </td>
-      <td>
-        <div class="dolor-txt" style="margin-bottom:6px">🔍 ${c.dolor}</div>
-        <div class="accion-txt">▶ ${c.accion}</div>
-      </td>
-      <td><textarea class="obs-area" placeholder="Agrega notas aquí…">${c.obs||''}</textarea></td>
-    </tr>
-  `).join('');
-}
-
-function resetFilters(){
-  document.getElementById("flt-seg").value="";
-  document.getElementById("flt-prio").value="";
-  document.getElementById("flt-est").value="";
-  renderTable();
-}
-
-function showTab(tab){
-  document.querySelectorAll(".section").forEach(s=>s.classList.remove("active"));
-  document.querySelectorAll(".nav-btn").forEach(b=>b.classList.remove("active"));
-  document.getElementById("sec-"+tab).classList.add("active");
-  event.target.classList.add("active");
-}
-
-// ── PROTECCIÓN ÁREA PRIVADA ──
-const PIP_KEY = "ponti_pip_auth";
-const PIP_PIN = "ponti2026";
-let pendingTab = "pip";
-let pendingTabIdx = 1; // índice del nav-btn correspondiente
-
-function requestPrivate(tab, label){
-  pendingTab = tab;
-  pendingTabIdx = tab === "pip" ? 1 : 2;
-  if(sessionStorage.getItem(PIP_KEY)==="ok"){
-    activatePrivateTab(); return;
-  }
-  document.getElementById("pin-desc").textContent = "Ingresa tu PIN para acceder a " + (label || tab);
-  document.getElementById("pin-error").style.display = "none";
-  const overlay = document.getElementById("pin-overlay");
-  overlay.style.display = "flex";
-  document.getElementById("pin-input").value = "";
-  setTimeout(()=>document.getElementById("pin-input").focus(), 80);
-}
-
-function activatePrivateTab(){
-  document.querySelectorAll(".section").forEach(s=>s.classList.remove("active"));
-  document.querySelectorAll(".nav-btn").forEach(b=>b.classList.remove("active"));
-  document.getElementById("sec-"+pendingTab).classList.add("active");
-  document.querySelectorAll(".nav-btn")[pendingTabIdx].classList.add("active");
-  if(pendingTab === "pip"){ loadState(); renderStats(); renderTable(); }
-}
-
-function submitPin(){
-  const val = document.getElementById("pin-input").value;
-  if(val === PIP_PIN){
-    sessionStorage.setItem(PIP_KEY,"ok");
-    document.getElementById("pin-overlay").style.display = "none";
-    activatePrivateTab();
-  } else {
-    document.getElementById("pin-error").style.display = "block";
-    document.getElementById("pin-input").value = "";
-    document.getElementById("pin-input").focus();
-  }
-}
-
-function cancelPin(){
-  document.getElementById("pin-overlay").style.display = "none";
-}
-
-// ── APV SIMULADOR ──
-function fmtCLP(n){ return '$'+Math.round(n).toLocaleString('es-CL'); }
-function updateAPV(){
-  const v = parseInt(document.getElementById('apv-slider').value);
-  document.getElementById('apv-val').textContent = fmtCLP(v);
-  const aA = Math.round(v*0.15);
-  const aB = Math.round(v*0.23);
-  document.getElementById('apv-ahorroA').textContent = fmtCLP(aA)+'/mes';
-  document.getElementById('apv-ahorroB').textContent = fmtCLP(aB)+'/mes';
-  document.getElementById('apv-anual').textContent = fmtCLP(aB*12);
-  document.getElementById('apv-neto').textContent = fmtCLP(v-aB)+'/mes';
-}
-updateAPV();
-
-// ── QR CODE ──
+// ── QR CODE — LinkedIn ──
 (function(){
-  const URL = "https://fpontigoc.github.io/pontigo-geo/";
+  const URL = "https://www.linkedin.com/in/francisco-javier-pontigo-cortes-20816117/";
   const el = document.getElementById("qrcode");
   if(!el) return;
   const img = new Image();
   img.width = 140; img.height = 140;
   img.style.cssText = "border-radius:6px;display:block";
-  img.alt = "QR Portal";
+  img.alt = "QR LinkedIn Francisco Pontigo";
   img.onerror = function(){
-    el.innerHTML = '<div style="width:140px;height:140px;background:#ede9e2;display:flex;align-items:center;justify-content:center;font-size:10px;color:#6b7280;text-align:center;border-radius:6px">Escanea el<br>código QR<br>' + URL + '</div>';
+    el.innerHTML = '<div style="width:140px;height:140px;background:#ede9e2;display:flex;align-items:center;justify-content:center;font-size:10px;color:#6b7280;text-align:center;border-radius:6px;padding:8px">linkedin.com/in/<br>francisco-javier-<br>pontigo-cortes</div>';
   };
   img.src = "https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=" + encodeURIComponent(URL);
   el.appendChild(img);
 })();
-
-// ── INIT ──
-document.addEventListener("DOMContentLoaded", function(){
-  loadState();
-  renderTable();
-});
 </script>
 </body>
 </html>
