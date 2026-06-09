@@ -113,6 +113,37 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 
 @media print{.topbar{display:none}.pub-wrap{padding:0}}
 
+/* ── MOBILE ≤640px ── */
+@media(max-width:640px){
+  .srv-grid,.como-grid,.two-col,.quien-inner,.fortalezas-row{grid-template-columns:1fr!important}
+  .hero{flex-direction:column;gap:16px}
+  .hero-right{display:none}
+  .hero-name{font-size:22px}
+  .hero-tagline{font-size:13px}
+  .pub-wrap{padding:20px 14px 40px}
+  .topbar{padding:0 16px}
+  .contact-strip{flex-direction:column;gap:10px;padding:14px 16px}
+  .cs-item{font-size:13px;padding:6px 0}
+  .cs-item a{font-size:13px}
+  .photo-slot{width:80px;height:80px;font-size:20px}
+  .stats-row .stat-box{min-width:70px}
+  .col-title{font-size:11px}
+  .col-list ul li{font-size:12.5px;padding:7px 0}
+  .srv-card{padding:14px;max-width:100%!important;width:100%!important}
+  .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:auto!important;max-width:100%!important;width:100%!important}
+  .dep-card{min-width:0;flex-basis:calc(50% - 5px)}
+  .cta-banner{padding:18px 16px}
+  .pub-footer{flex-direction:column;gap:12px;text-align:center}
+  .pub-footer a.cta{width:100%;text-align:center;padding:13px 0;box-sizing:border-box}
+  .wa-float{display:flex;bottom:16px;right:16px}
+  .sys-strip{padding:10px 14px;gap:6px}
+  .quien-inner{display:grid!important;grid-template-columns:1fr!important}
+  .photo-slot{display:block;margin:0 auto 12px}
+  .quien-wrap{padding:16px}
+  #profile-photo{width:90px!important;height:90px!important;display:block;margin:0 auto 12px}
+  body{overflow-x:hidden}
+}
+
 /* ── QUIÉN SOY ── */
 .quien-wrap{background:white;border:1px solid var(--border);border-radius:10px;padding:22px 24px;margin-bottom:24px}
 .quien-inner{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
@@ -147,45 +178,12 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .fortaleza-item strong{font-size:11.5px;color:var(--slate);display:block;margin-bottom:2px}
 .fortaleza-item p{font-size:11px;color:var(--gray);line-height:1.4;margin:0}
 
-
 .hero-free{font-size:11.5px;color:var(--copper);font-weight:600;margin:-4px 0 12px;line-height:1.5}
 .hero-free a{color:var(--copper);text-decoration:underline;text-underline-offset:2px}
 .hero-free a:hover{opacity:.8}
 .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:1/-1;max-width:calc(50% - 5px)}
 .wa-float{display:none;position:fixed;bottom:22px;right:20px;background:#16A34A;color:white;font-size:26px;width:58px;height:58px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.35);text-decoration:none;z-index:999;transition:transform .15s,box-shadow .15s}
 .wa-float:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(0,0,0,.4)}
-
-
-/* ── MOBILE ≤640px ── */
-@media(max-width:640px){
-  .srv-grid,.como-grid,.two-col,.quien-inner,.fortalezas-row{grid-template-columns:1fr!important}
-  .hero{flex-direction:column;gap:16px}
-  .hero-right{display:none}
-  .hero-name{font-size:22px}
-  .hero-tagline{font-size:13px}
-  .pub-wrap{padding:20px 14px 40px}
-  .topbar{padding:0 16px}
-  .contact-strip{flex-direction:column;gap:10px;padding:14px 16px}
-  .cs-item{font-size:13px;padding:6px 0}
-  .cs-item a{font-size:13px}
-  .photo-slot{width:80px;height:80px;font-size:20px}
-  .stats-row .stat-box{min-width:70px}
-  .col-title{font-size:11px}
-  .col-list ul li{font-size:12.5px;padding:7px 0}
-  .srv-card{padding:14px;max-width:100%!important;width:100%!important}
-  .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:auto!important;max-width:100%!important;width:100%!important}
-  .dep-card{min-width:0;flex-basis:calc(50% - 5px)}
-  .cta-banner{padding:18px 16px}
-  .pub-footer{flex-direction:column;gap:12px;text-align:center}
-  .pub-footer a.cta{width:100%;text-align:center;padding:13px 0;box-sizing:border-box}
-  .wa-float{display:flex;bottom:16px;right:16px}
-  .sys-strip{padding:10px 14px;gap:6px}
-  .quien-inner{display:grid!important;grid-template-columns:1fr!important}
-  .photo-slot{display:block;margin:0 auto 12px}
-  .quien-wrap{padding:16px}
-  #profile-photo{width:90px!important;height:90px!important;display:block;margin:0 auto 12px}
-  body{overflow-x:hidden}
-}
 </style>
 </head>
 <body>
@@ -239,7 +237,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
       <ul>
         <li>Quien no sabe si vale la pena seguir invirtiendo en su operación o proyecto minero</li>
         <li>Inversionistas que quieren saber si el proyecto que están evaluando tiene respaldo técnico real</li>
-        <li>Empresas que tienen datos pero no saben si son confiables — y tienen que decidir pronto</li>
+        <li>Empresas con datos históricos de calidad incierta que deben tomar decisiones pronto</li>
         <li>Consultoras que necesitan refuerzo técnico puntual o una segunda opinión independiente</li>
         <li>Universidades, OTEC y empresas que quieren formación aplicada con casos reales</li>
         <li>Organismos públicos y programas de fomento a la pequeña y mediana minería</li>
@@ -250,9 +248,9 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
       <ul>
         <li>Sabes si tu inversión tiene base real — antes de comprometer más dinero</li>
         <li>Evitas pagar estudios costosos con datos que todavía no están listos</li>
-        <li>Sabes exactamente qué corregir, qué ignorar y qué no tocar — sin adivinar</li>
+        <li>Priorizas con criterio: qué corregir, qué complementar, qué no tocar</li>
         <li>Puedes negociar mejor con ENAMI, inversionistas, laboratorios o compradores</li>
-        <li>Tu equipo comete menos errores y produce información en la que puedes confiar</li>
+        <li>Equipos que cometen menos errores y generan información de mejor calidad</li>
         <li>Una opinión técnica objetiva — no vinculada a ningún proveedor ni interés</li>
       </ul>
     </div>
@@ -313,4 +311,205 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     <div class="como-step">
       <div class="como-num">03</div>
       <div class="como-title">Recomendación que se puede defender</div>
-      <div class="como-desc">No un volumen de páginas. Una opinión técnica fundamentada, directa y tra
+      <div class="como-desc">No un volumen de páginas. Una opinión técnica fundamentada, directa y trazable — que puedes aplicar, mostrar a un mandante o usar para decidir.</div>
+    </div>
+  </div>
+
+  <!-- CTA PRINCIPAL -->
+  <div class="cta-banner">
+    <div class="cta-text">
+      <strong>¿Tienes un proyecto, una duda técnica o una decisión que tomar?</strong>
+      <span>La primera conversación no tiene costo — cuéntame qué tienes.</span>
+    </div>
+    <div class="cta-btns">
+      <a class="cta-btn-primary" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto%20geol%C3%B3gico." target="_blank">📱 Escríbeme por WhatsApp</a>
+      <a class="cta-btn-secondary" href="mailto:fpontigoc@outlook.com?subject=Consulta%20t%C3%A9cnica">✉️ Email</a>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <div class="sec-title">Servicios Profesionales</div>
+
+  <!-- GRUPO 1: Consultoría Técnica -->
+  <div class="srv-group">
+    <div class="srv-group-label">Consultoría Técnica</div>
+    <div class="srv-grid">
+
+      <div class="srv-card">
+        <span class="srv-icon">🔍</span>
+        <div class="srv-title">Diagnóstico Técnico Senior</div>
+        <div class="srv-desc">¿Vale la pena seguir invirtiendo en este yacimiento? Te doy una respuesta clara: qué tienes, qué vale y qué falta — antes de comprometer más presupuesto.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Diagn%C3%B3stico%20T%C3%A9cnico%20Senior">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Diagn%C3%B3stico%20T%C3%A9cnico%20Senior." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <span class="srv-icon">✅</span>
+        <div class="srv-title">QA/QC y Trazabilidad de Datos</div>
+        <div class="srv-desc">Datos con errores = decisiones equivocadas = plata perdida. Reviso la calidad de tu información antes de que el error te cueste caro.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20QA%2FQC%20y%20Trazabilidad%20de%20Datos">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20QA%2FQC%20y%20Trazabilidad%20de%20Datos." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <span class="srv-icon">⛰️</span>
+        <div class="srv-title">Revisión Crítica de Modelos y Campañas</div>
+        <div class="srv-desc">¿Tu modelo aguanta un due diligence? Una segunda mirada independiente puede protegerte de comprometerte con un supuesto que no se sostiene.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Revisi%C3%B3n%20Cr%C3%ADtica%20de%20Modelos%20y%20Campa%C3%B1as">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Revisi%C3%B3n%20Cr%C3%ADtica%20de%20Modelos." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <span class="srv-icon">🏭</span>
+        <div class="srv-title">Geometalurgia Aplicada</div>
+        <div class="srv-desc">Pruebas de laboratorio mal diseñadas son plata tirada. Te digo qué vale testear y qué no — antes de contratar el ensayo.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Geometalurgia%20Aplicada">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Geometalurgia%20Aplicada." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <span class="srv-icon">📋</span>
+        <div class="srv-title">Apoyo a Propuestas y Licitaciones</div>
+        <div class="srv-desc">Una propuesta con fallas técnicas puede costarte el contrato o comprometerte en algo que no puedes cumplir. La reviso antes de que salga.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Apoyo%20a%20Propuestas%20y%20Licitaciones">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Apoyo%20a%20Propuestas%20y%20Licitaciones." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GRUPO 2: Formación y Docencia -->
+  <div class="srv-group">
+    <div class="srv-group-label">Formación y Docencia</div>
+    <div class="srv-grid">
+
+      <div class="srv-card">
+        <span class="srv-icon">🎓</span>
+        <div class="srv-title">Docencia, Relatorías y Talleres</div>
+        <div class="srv-desc">Formación con casos reales de yacimientos y proyectos mineros — no pizarra y teoría. Para OTEC, universidades y empresas que necesitan que sus equipos suban el nivel.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Docencia%2C%20Relator%C3%ADas%20y%20Talleres">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Docencia%2C%20Relator%C3%ADas%20y%20Talleres." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <span class="srv-icon">👥</span>
+        <div class="srv-title">Formación de Equipos Geológicos</div>
+        <div class="srv-desc">Un equipo que no mide bien pierde datos y hace mala geología. Protocolos, cartillas y entrenamiento en terreno — para que la campaña rinda desde el día uno.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Formaci%C3%B3n%20de%20Equipos%20Geol%C3%B3gicos">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Formaci%C3%B3n%20de%20Equipos%20Geol%C3%B3gicos." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GRUPO 3: Fomento y Pequeña Minería -->
+  <div class="srv-group">
+    <div class="srv-group-label">Fomento y Pequeña Minería</div>
+    <div class="srv-grid">
+
+      <div class="srv-card">
+        <span class="srv-icon">⛏️</span>
+        <div class="srv-title">Visita Técnica – Pequeña Minería</div>
+        <div class="srv-desc">Voy a tu faena, evalúo el terreno junto a tus antecedentes y te acompaño a entender qué tiene tu yacimiento, qué le falta y cómo sacarle mejor partido económico.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Visita%20T%C3%A9cnica%20%E2%80%93%20Peque%C3%B1a%20Miner%C3%ADa">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Visita%20T%C3%A9cnica%20%E2%80%93%20Peque%C3%B1a%20Miner%C3%ADa." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <span class="srv-icon">🏛️</span>
+        <div class="srv-title">Apoyo a Programas de Fomento</div>
+        <div class="srv-desc">Para Seremías, GORE y programas de fomento que necesitan criterio técnico real para priorizar recursos en la pequeña minería.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Apoyo%20a%20Programas%20de%20Fomento">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Apoyo%20a%20Programas%20de%20Fomento." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <span class="srv-icon">🗺️</span>
+        <div class="srv-title">Exploración Básica y Evaluación de Prospectos</div>
+        <div class="srv-desc">¿Vale la pena explorar este prospecto o es un gasto sin retorno? Geoquímica, geofísica e interpretación estructural para decidir antes de comprometer presupuesto en sondajes.</div>
+        <div class="srv-btns">
+          <a class="srv-btn srv-btn-email" href="mailto:fpontigoc@outlook.com?subject=Consulta%3A%20Exploraci%C3%B3n%20B%C3%A1sica%20y%20Evaluaci%C3%B3n%20de%20Prospectos">✉️ Email</a>
+          <a class="srv-btn srv-btn-wa" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20me%20interesa%20el%20servicio%20de%20Exploraci%C3%B3n%20B%C3%A1sica%20y%20Evaluaci%C3%B3n%20de%20Prospectos." target="_blank">📱 Mensaje</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SISTEMAS -->
+  <div class="sys-strip">
+    <span class="sys-label">Sistemas con experiencia directa:</span>
+    <span class="sys-badge">Pórfidos Cu</span>
+    <span class="sys-badge">Pórfidos Cu-Au</span>
+    <span class="sys-badge">Pórfidos Cu-Mo</span>
+    <span class="sys-badge">IOCG (Fe-Cu-Au-Co)</span>
+    <span class="sys-badge">IOA (Fe-Ti-Sb)</span>
+    <span class="sys-badge">Epitermal alta sulf. (Cu-Au-Ag)</span>
+    <span class="sys-badge">Epitermal baja sulf. (Ag-Au-Pb-Zn)</span>
+    <span class="sys-badge">Skarn Cu-Au</span>
+    <span class="sys-badge">Cobre exótico</span>
+    <span class="sys-badge">Cu-Mo-Co</span>
+  </div>
+  <div class="sys-strip" style="background:var(--slate2);margin-bottom:24px">
+    <span class="sys-label">Estilos de mineralización reconocidos:</span>
+    <span class="sys-badge">Brecha de turmalina</span>
+    <span class="sys-badge">Brecha de sulfuros</span>
+    <span class="sys-badge">Brecha de magnetita-hematita</span>
+    <span class="sys-badge">Brecha hidrotermal</span>
+    <span class="sys-badge">Stockwork cuarzo-sulfuros</span>
+    <span class="sys-badge">Vetas hidrotermales</span>
+    <span class="sys-badge">Vetas de cuarzo Au-Ag</span>
+    <span class="sys-badge">Gossan / sombrero de hierro</span>
+    <span class="sys-badge">Manto de cobre</span>
+    <span class="sys-badge">Manto de magnetita-hematita</span>
+    <span class="sys-badge">Cu exótico en gravas</span>
+    <span class="sys-badge">Cuerpos de óxidos de cobre y fierro</span>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="pub-footer">
+    <div style="font-size:11px;color:var(--gray);max-width:500px;font-style:italic">Servicios prestados en forma independiente. Alcance, entregables y precio definidos en cotización formal. No incluye firma de Persona Competente ni declaración de recursos certificados.</div>
+    <a class="cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos →</a>
+  </div>
+
+</div>
+
+<script>
+// ── QR CODE — LinkedIn ──
+(function(){
+  const URL = "https://www.linkedin.com/in/francisco-javier-pontigo-cortes-20816117/";
+  const el = document.getElementById("qrcode");
+  if(!el) return;
+  const img = new Image();
+  img.width = 140; img.height = 140;
+  img.style.cssText = "border-radius:6px;display:block";
+  img.alt = "QR LinkedIn Francisco Pontigo";
+  img.onerror = function(){
+    el.innerHTML = '<div style="width:140px;height:140px;background:#ede9e2;display:flex;align-items:center;justify-content:center;font-size:10px;color:#6b7280;text-align:center;border-radius:6px;padding:8px">linkedin.com/in/<br>francisco-javier-<br>pontigo-cortes</div>';
+  };
+  img.src = "https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=" + encodeURIComponent(URL);
+  el.appendChild(img);
+})();
+</script>
+<a class="wa-float" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank" aria-label="WhatsApp">📱</a>
+
+</body>
+</html>
