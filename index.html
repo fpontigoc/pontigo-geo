@@ -128,7 +128,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
       <div class="hero-badge">Pontigo Geociencias Aplicadas</div>
       <div class="hero-name">Francisco Javier Pontigo Cortés</div>
       <div class="hero-subtitle">Geólogo Senior · Consultor Independiente · Copiapó, Región de Atacama</div>
-      <div class="hero-cred">22+ años en minería metálica &nbsp;·&nbsp; Codelco · BHP · Collahuasi · SQM · Capstone · Marcobre · Shougang &nbsp;·&nbsp; NI 43-101 · JORC · SK1300</div>
+      <div class="hero-cred">22+ años prestando servicios en minería metálica &nbsp;·&nbsp; Codelco · BHP · Collahuasi · SQM · Capstone · Marcobre · Shougang &nbsp;·&nbsp; NI 43-101 · JORC · SK1300</div>
       <div class="hero-tagline">"Tu negocio minero necesita decisiones técnicas correctas — antes de gastar más. Te digo qué tienes, qué vale y cómo proteger tu inversión."</div>
       <div class="hero-tags">
         <span class="htag c">+22 años de experiencia</span>
@@ -159,12 +159,26 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
   <div class="quien-wrap">
     <div class="sec-title" style="margin-bottom:14px">Quién soy</div>
     <div class="quien-inner">
-      <!-- Reemplazar con foto real: cambiar el div.photo-slot por <img src="foto.jpg" style="width:110px;height:110px;border-radius:50%;object-fit:cover;border:3px solid var(--copper)"> -->
-      <div class="photo-slot">FJP</div>
+      <!-- FOTO: sube foto.jpg a esta misma carpeta y al repo GitHub. El img carga automático; si no existe, muestra las iniciales. -->
+      <img id="profile-photo" src="foto.jpg"
+           style="width:110px;height:110px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid var(--copper);flex-shrink:0;display:none"
+           alt="Francisco Pontigo"
+           onerror="this.style.display='none';document.getElementById('photo-initials').style.display='flex'">
+      <div class="photo-slot" id="photo-initials" style="display:none">FJPC</div>
+      <script>
+        (function(){
+          var img = document.getElementById('profile-photo');
+          var ini = document.getElementById('photo-initials');
+          img.onload = function(){ img.style.display='block'; ini.style.display='none'; };
+          // Trigger if already cached
+          if(img.complete && img.naturalWidth > 0){ img.style.display='block'; ini.style.display='none'; }
+          else { ini.style.display='flex'; }
+        })();
+      </script>
       <div>
-        <div class="quien-bio">Geólogo senior con más de 22 años en minería metálica — desde exploración y desarrollo hasta operaciones y auditorías independientes. He trabajado directamente en proyectos de Codelco, BHP, Collahuasi, Mantos Copper, Capstone Mining, SQM, Marcobre y Shougang, bajo estándares internacionales NI 43-101, JORC 2012 y SK1300. Integro geología, minería y metalurgia para dar respuestas concretas: qué tiene el yacimiento, qué vale y qué riesgos enfrenta — antes de que el gasto sea un problema.</div>
+        <div class="quien-bio">Geólogo senior con más de 22 años prestando servicios en minería metálica — exploración, desarrollo, operaciones y auditorías independientes. He prestado servicios directamente a Codelco, BHP, Collahuasi, Mantos Copper, Capstone Mining, SQM, Marcobre y Shougang, bajo estándares internacionales NI 43-101, JORC 2012 y SK1300. Integro geología, minería y metalurgia para dar respuestas concretas: qué tiene el yacimiento, qué vale y qué riesgos enfrenta — antes de que el gasto sea un problema.</div>
         <div class="stats-row">
-          <div class="stat-box"><div class="stat-num">22+</div><div class="stat-label">Años en minería metálica</div></div>
+          <div class="stat-box"><div class="stat-num">22+</div><div class="stat-label">Años prestando servicios en minería metálica</div></div>
           <div class="stat-box"><div class="stat-num">16</div><div class="stat-label">Proyectos documentados (2004–2026)</div></div>
           <div class="stat-box"><div class="stat-num">5+</div><div class="stat-label">Auditorías independientes de modelos de recursos</div></div>
           <div class="stat-box"><div class="stat-num">8</div><div class="stat-label">Clientes de gran y mediana minería</div></div>
