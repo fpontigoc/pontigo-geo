@@ -111,30 +111,6 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .pub-footer a.cta{background:var(--copper);color:white;padding:10px 24px;border-radius:5px;font-weight:700;text-decoration:none;font-size:13px}
 .pub-footer a.cta:hover{background:var(--copper2)}
 
-@media(max-width:640px){
-  .srv-grid,.como-grid,.two-col,.quien-inner{grid-template-columns:1fr}
-  .hero{flex-direction:column;gap:16px}
-  .hero-right{display:none}
-  .hero-name{font-size:22px}
-  .hero-tagline{font-size:13px}
-  .pub-wrap{padding:20px 14px 40px}
-  .topbar{padding:0 16px}
-  .contact-strip{flex-direction:column;gap:10px;padding:14px 16px}
-  .cs-item{font-size:13px;padding:6px 0}
-  .cs-item a{font-size:13px}
-  .photo-slot{width:80px;height:80px;font-size:20px}
-  .stats-row .stat-box{min-width:70px}
-  .col-title{font-size:11px}
-  .col-list ul li{font-size:12.5px;padding:7px 0}
-  .srv-card{padding:14px;max-width:100%!important}
-  .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:auto;max-width:100%!important}
-  .dep-card{min-width:0;flex-basis:calc(50% - 5px)}
-  .cta-banner{padding:18px 16px}
-  .pub-footer{flex-direction:column;gap:12px;text-align:center}
-  .pub-footer a.cta{width:100%;text-align:center;padding:13px 0}
-  .wa-float{bottom:16px;right:16px}
-  .sys-strip{padding:10px 14px;gap:6px}
-}
 @media print{.topbar{display:none}.pub-wrap{padding:0}}
 
 /* ── QUIÉN SOY ── */
@@ -170,7 +146,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .for-icon{font-size:17px;flex-shrink:0;line-height:1.4}
 .fortaleza-item strong{font-size:11.5px;color:var(--slate);display:block;margin-bottom:2px}
 .fortaleza-item p{font-size:11px;color:var(--gray);line-height:1.4;margin:0}
-@media(max-width:640px){.fortalezas-row{grid-template-columns:1fr}}
+
 
 .hero-free{font-size:11.5px;color:var(--copper);font-weight:600;margin:-4px 0 12px;line-height:1.5}
 .hero-free a{color:var(--copper);text-decoration:underline;text-underline-offset:2px}
@@ -178,7 +154,37 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:1/-1;max-width:calc(50% - 5px)}
 .wa-float{display:none;position:fixed;bottom:22px;right:20px;background:#16A34A;color:white;font-size:26px;width:58px;height:58px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.35);text-decoration:none;z-index:999;transition:transform .15s,box-shadow .15s}
 .wa-float:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(0,0,0,.4)}
-@media(max-width:640px){.wa-float{display:flex}}
+
+
+/* ── MOBILE ≤640px ── */
+@media(max-width:640px){
+  .srv-grid,.como-grid,.two-col,.quien-inner,.fortalezas-row{grid-template-columns:1fr!important}
+  .hero{flex-direction:column;gap:16px}
+  .hero-right{display:none}
+  .hero-name{font-size:22px}
+  .hero-tagline{font-size:13px}
+  .pub-wrap{padding:20px 14px 40px}
+  .topbar{padding:0 16px}
+  .contact-strip{flex-direction:column;gap:10px;padding:14px 16px}
+  .cs-item{font-size:13px;padding:6px 0}
+  .cs-item a{font-size:13px}
+  .photo-slot{width:80px;height:80px;font-size:20px}
+  .stats-row .stat-box{min-width:70px}
+  .col-title{font-size:11px}
+  .col-list ul li{font-size:12.5px;padding:7px 0}
+  .srv-card{padding:14px;max-width:100%!important;width:100%!important}
+  .srv-grid>.srv-card:last-child:nth-child(odd){grid-column:auto!important;max-width:100%!important;width:100%!important}
+  .dep-card{min-width:0;flex-basis:calc(50% - 5px)}
+  .cta-banner{padding:18px 16px}
+  .pub-footer{flex-direction:column;gap:12px;text-align:center}
+  .pub-footer a.cta{width:100%;text-align:center;padding:13px 0;box-sizing:border-box}
+  .wa-float{display:flex;bottom:16px;right:16px}
+  .sys-strip{padding:10px 14px;gap:6px}
+  .quien-inner{display:grid!important;grid-template-columns:1fr!important}
+  .photo-slot{display:block;margin:0 auto 12px}
+  .quien-wrap{padding:16px}
+  body{overflow-x:hidden}
+}
 </style>
 </head>
 <body>
@@ -306,23 +312,4 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     <div class="como-step">
       <div class="como-num">03</div>
       <div class="como-title">Recomendación que se puede defender</div>
-      <div class="como-desc">No un volumen de páginas. Una opinión técnica fundamentada, directa y trazable — que puedes aplicar, mostrar a un mandante o usar para decidir.</div>
-    </div>
-  </div>
-
-  <!-- CTA PRINCIPAL -->
-  <div class="cta-banner">
-    <div class="cta-text">
-      <strong>¿Tienes un proyecto, una duda técnica o una decisión que tomar?</strong>
-      <span>La primera conversación no tiene costo — cuéntame qué tienes.</span>
-    </div>
-    <div class="cta-btns">
-      <a class="cta-btn-primary" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto%20geol%C3%B3gico." target="_blank">📱 Escríbeme por WhatsApp</a>
-      <a class="cta-btn-secondary" href="mailto:fpontigoc@outlook.com?subject=Consulta%20t%C3%A9cnica">✉️ Email</a>
-    </div>
-  </div>
-
-  <!-- SERVICIOS -->
-  <div class="sec-title">Servicios Profesionales</div>
-
-  <!-- GRUP
+      <div class="como-desc">No un volumen de páginas. Una opinión técnica fundamentada, directa y tra
