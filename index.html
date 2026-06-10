@@ -205,8 +205,8 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
   .elem-row{display:flex;flex-wrap:wrap;gap:3px;justify-content:center;margin-bottom:5px}
   .elem{color:white;font-size:10px;font-weight:700;padding:3px 5px;border-radius:3px;letter-spacing:.3px;min-width:24px;text-align:center;line-height:1.5}
   .formacion-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
-  .formacion-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
-  .uni-sigla{display:inline-block;background:var(--slate);color:var(--copper2);font-size:10px;font-weight:800;padding:2px 8px;border-radius:4px;letter-spacing:.8px;margin-bottom:7px}
+  .formacion-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:14px 12px;text-align:center}
+  .uni-escudo{height:44px;width:auto;max-width:90px;object-fit:contain;display:block;margin:0 auto 9px}
   .formacion-titulo{font-size:11.5px;font-weight:600;color:var(--slate);line-height:1.35;margin-bottom:3px}
   .formacion-inst{font-size:10px;color:var(--gray)}
   .entry-gains{background:var(--copper3);border-left:3px solid var(--copper);border-radius:5px;padding:8px 12px;margin-top:2px}
@@ -374,19 +374,19 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
         </div>
         <div class="formacion-grid">
           <div class="formacion-card">
-            <div class="uni-sigla">UCN</div>
+            <img class="uni-escudo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Emblema_Universidad_Cat%C3%B3lica_del_Norte.png/80px-Emblema_Universidad_Cat%C3%B3lica_del_Norte.png" alt="UCN">
             <div class="formacion-titulo">Geólogo Titulado</div>
             <div class="formacion-inst">Universidad Católica del Norte</div>
           </div>
           <div class="formacion-card">
-            <div class="uni-sigla">U. CHILE</div>
+            <img class="uni-escudo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_Universidad_de_Chile.svg/80px-Logo_Universidad_de_Chile.svg.png" alt="U. de Chile">
             <div class="formacion-titulo">Diplomado en Evaluación Geoestadística de Yacimientos</div>
             <div class="formacion-inst">Universidad de Chile</div>
           </div>
           <div class="formacion-card">
-            <div class="uni-sigla">¿?</div>
+            <img class="uni-escudo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Logo_Universidad_Adolfo_Ib%C3%A1%C3%B1ez.JPG/160px-Logo_Universidad_Adolfo_Ib%C3%A1%C3%B1ez.JPG" alt="UAI">
             <div class="formacion-titulo">Diplomado en Infraestructuras de Proyectos y Desarrollo</div>
-            <div class="formacion-inst">— confirmar institución</div>
+            <div class="formacion-inst">Universidad Adolfo Ibáñez</div>
           </div>
         </div>
       </div>
@@ -600,4 +600,30 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 
   <!-- FOOTER -->
   <div class="pub-footer">
-    <div style="font-size:11px;color:var(--gray);max-width:500px;font-style:italic">Servicios prestados en forma independiente. Alcance, entregables y precio definidos en cotización formal. No incluye firma de Persona Competente ni declaración de recursos ce
+    <div style="font-size:11px;color:var(--gray);max-width:500px;font-style:italic">Servicios prestados en forma independiente. Alcance, entregables y precio definidos en cotización formal. No incluye firma de Persona Competente ni declaración de recursos certificados.</div>
+    <a class="cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos →</a>
+  </div>
+
+</div>
+
+<script>
+// ── QR CODE — LinkedIn ──
+(function(){
+  const URL = "https://www.linkedin.com/in/francisco-javier-pontigo-cortes-20816117/";
+  const el = document.getElementById("qrcode");
+  if(!el) return;
+  const img = new Image();
+  img.width = 140; img.height = 140;
+  img.style.cssText = "border-radius:6px;display:block";
+  img.alt = "QR LinkedIn Francisco Pontigo";
+  img.onerror = function(){
+    el.innerHTML = '<div style="width:140px;height:140px;background:#ede9e2;display:flex;align-items:center;justify-content:center;font-size:10px;color:#6b7280;text-align:center;border-radius:6px;padding:8px">linkedin.com/in/<br>francisco-javier-<br>pontigo-cortes</div>';
+  };
+  img.src = "https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=" + encodeURIComponent(URL);
+  el.appendChild(img);
+})();
+</script>
+<a class="wa-float" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank" aria-label="WhatsApp">📱</a>
+
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
