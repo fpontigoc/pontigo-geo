@@ -53,8 +53,6 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 /* QR */
 .hero-right{display:flex;flex-direction:column;align-items:center;gap:10px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px 24px;min-width:180px}
 .qr-title{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--gray);text-align:center}
-
-
 .qr-label{font-size:10px;color:var(--gray2);text-align:center;max-width:140px}
 
 /* Contacto strip */
@@ -583,4 +581,54 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
     <span class="sys-badge">Pórfidos Cu-Mo</span>
     <span class="sys-badge">IOCG (Fe-Cu-Au-Co)</span>
     <span class="sys-badge">IOA (Fe-Ti-Sb)</span>
-    <span class="sys-
+    <span class="sys-badge">Epitermal alta sulf. (Cu-Au-Ag)</span>
+    <span class="sys-badge">Epitermal baja sulf. (Ag-Au-Pb-Zn)</span>
+    <span class="sys-badge">Skarn Cu-Au</span>
+    <span class="sys-badge">Cobre exótico</span>
+    <span class="sys-badge">Cu-Mo-Co</span>
+  </div>
+  <div class="sys-strip" style="background:var(--slate2);margin-bottom:24px">
+    <span class="sys-label">Estilos de mineralización reconocidos:</span>
+    <span class="sys-badge">Brecha de turmalina</span>
+    <span class="sys-badge">Brecha de sulfuros</span>
+    <span class="sys-badge">Brecha de magnetita-hematita</span>
+    <span class="sys-badge">Brecha hidrotermal</span>
+    <span class="sys-badge">Stockwork cuarzo-sulfuros</span>
+    <span class="sys-badge">Vetas hidrotermales</span>
+    <span class="sys-badge">Vetas de cuarzo Au-Ag</span>
+    <span class="sys-badge">Gossan / sombrero de hierro</span>
+    <span class="sys-badge">Manto de cobre</span>
+    <span class="sys-badge">Manto de magnetita-hematita</span>
+    <span class="sys-badge">Cu exótico en gravas</span>
+    <span class="sys-badge">Cuerpos de óxidos de cobre y fierro</span>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="pub-footer">
+    <div style="font-size:11px;color:var(--gray);max-width:500px;font-style:italic">Servicios prestados en forma independiente. Alcance, entregables y precio definidos en cotización formal. No incluye firma de Persona Competente ni declaración de recursos certificados.</div>
+    <a class="cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos →</a>
+  </div>
+
+</div>
+
+<script>
+// QR CODE — LinkedIn
+(function(){
+  const URL = "https://www.linkedin.com/in/francisco-javier-pontigo-cortes-20816117/";
+  const el = document.getElementById("qrcode");
+  if(!el) return;
+  const img = new Image();
+  img.width = 140; img.height = 140;
+  img.style.cssText = "border-radius:6px;display:block";
+  img.alt = "QR LinkedIn Francisco Pontigo";
+  img.onerror = function(){
+    el.innerHTML = '<div style="width:140px;height:140px;background:#ede9e2;display:flex;align-items:center;justify-content:center;font-size:10px;color:#6b7280;text-align:center;border-radius:6px;padding:8px">linkedin.com/in/<br>francisco-javier-<br>pontigo-cortes</div>';
+  };
+  img.src = "https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=" + encodeURIComponent(URL);
+  el.appendChild(img);
+})();
+</script>
+<a class="wa-float" href="https://wa.me/56991279171?text=Hola%20Francisco%2C%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank" aria-label="WhatsApp">📱</a>
+
+</body>
+</html>
