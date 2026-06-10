@@ -173,7 +173,7 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 
 /* ── MOBILE ≤640px ── */
 @media(max-width:640px){
-  .srv-grid,.como-grid,.two-col,.quien-inner,.fortalezas-row,.entry-grid{grid-template-columns:1fr!important}
+  .srv-grid,.como-grid,.two-col,.quien-inner,.fortalezas-row,.entry-grid,.formacion-grid{grid-template-columns:1fr!important}
   .hero{flex-direction:column;gap:16px}
   .hero-right{display:none}
   .hero-name{font-size:22px}
@@ -204,8 +204,11 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 
   .elem-row{display:flex;flex-wrap:wrap;gap:3px;justify-content:center;margin-bottom:5px}
   .elem{color:white;font-size:10px;font-weight:700;padding:3px 5px;border-radius:3px;letter-spacing:.3px;min-width:24px;text-align:center;line-height:1.5}
-  .formacion-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-  .form-badge{background:var(--light);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:10.5px;font-weight:500;color:var(--slate2)}
+  .formacion-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+  .formacion-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+  .uni-sigla{display:inline-block;background:var(--slate);color:var(--copper2);font-size:10px;font-weight:800;padding:2px 8px;border-radius:4px;letter-spacing:.8px;margin-bottom:7px}
+  .formacion-titulo{font-size:11.5px;font-weight:600;color:var(--slate);line-height:1.35;margin-bottom:3px}
+  .formacion-inst{font-size:10px;color:var(--gray)}
   .entry-gains{background:var(--copper3);border-left:3px solid var(--copper);border-radius:5px;padding:8px 12px;margin-top:2px}
   .entry-gains-label{font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--copper);margin-bottom:5px}
   .entry-gains ul{list-style:none;margin:0;padding:0}
@@ -367,12 +370,24 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
         <div class="stats-row">
           <div class="stat-box"><div class="stat-num">22+</div><div class="stat-label">Años en geología minera</div></div>
           <div class="stat-box"><div class="stat-num">20+</div><div class="stat-label">Yacimientos conocidos directamente</div></div>
-          <div class="stat-box" style="flex:1.5"><div class="elem-row"><span class="elem" style="background:#B7400A" title="Cobre">Cu</span><span class="elem" style="background:#C9A600;color:#1B2D3E" title="Oro">Au</span><span class="elem" style="background:#888" title="Plata">Ag</span><span class="elem" style="background:#2E6FB4" title="Molibdeno">Mo</span><span class="elem" style="background:#8B2500" title="Fierro">Fe</span><span class="elem" style="background:#0047AB" title="Cobalto">Co</span><span class="elem" style="background:#7B3F9E" title="Litio">Li</span></div><div class="stat-label">Metales y commodities</div></div>
+          <div class="stat-box" style="flex:1.5"><div class="elem-row"><span class="elem" style="background:#B7400A" title="Cobre">Cu</span><span class="elem" style="background:#C9A600;color:#1B2D3E" title="Oro">Au</span><span class="elem" style="background:#888" title="Plata">Ag</span><span class="elem" style="background:#2E6FB4" title="Molibdeno">Mo</span><span class="elem" style="background:#8B2500" title="Fierro">Fe</span><span class="elem" style="background:#0047AB" title="Cobalto">Co</span></div><div class="stat-label">Metales y commodities</div></div>
         </div>
-        <div class="formacion-row">
-          <span class="form-badge">🎓 Geólogo Titulado · UCN</span>
-          <span class="form-badge">📊 Diplomado Evaluación Geoestadística · U. de Chile</span>
-          <span class="form-badge">🏗️ Diplomado Infraestructuras de Proyectos y Desarrollo</span>
+        <div class="formacion-grid">
+          <div class="formacion-card">
+            <div class="uni-sigla">UCN</div>
+            <div class="formacion-titulo">Geólogo Titulado</div>
+            <div class="formacion-inst">Universidad Católica del Norte</div>
+          </div>
+          <div class="formacion-card">
+            <div class="uni-sigla">U. CHILE</div>
+            <div class="formacion-titulo">Diplomado en Evaluación Geoestadística de Yacimientos</div>
+            <div class="formacion-inst">Universidad de Chile</div>
+          </div>
+          <div class="formacion-card">
+            <div class="uni-sigla">¿?</div>
+            <div class="formacion-titulo">Diplomado en Infraestructuras de Proyectos y Desarrollo</div>
+            <div class="formacion-inst">— confirmar institución</div>
+          </div>
         </div>
       </div>
     </div>
@@ -585,21 +600,4 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 
   <!-- FOOTER -->
   <div class="pub-footer">
-    <div style="font-size:11px;color:var(--gray);max-width:500px;font-style:italic">Servicios prestados en forma independiente. Alcance, entregables y precio definidos en cotización formal. No incluye firma de Persona Competente ni declaración de recursos certificados.</div>
-    <a class="cta" href="https://wa.me/56991279171" target="_blank">📲 Conversemos →</a>
-  </div>
-
-</div>
-
-<script>
-// ── QR CODE — LinkedIn ──
-(function(){
-  const URL = "https://www.linkedin.com/in/francisco-javier-pontigo-cortes-20816117/";
-  const el = document.getElementById("qrcode");
-  if(!el) return;
-  const img = new Image();
-  img.width = 140; img.height = 140;
-  img.style.cssText = "border-radius:6px;display:block";
-  img.alt = "QR LinkedIn Francisco Pontigo";
-  img.onerror = function(){
-    el.innerHTML = '<div style="width:140px;height:140px;background:#ede9e2;display:flex;align-items:center;justify-content:center;font-size:10px;color:#6b7280;text-align:center;border-radius:6px;padding:8px">linkedin.com/in/<br>francisco-javier-<br>pont
+    <div style="font-size:11px;color:var(--gray);max-width:500px;font-style:italic">Servicios prestados en forma independiente. Alcance, entregables y precio definidos en cotización formal. No incluye firma de Persona Competente ni declaración de recursos ce
