@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fpontigoc.github.io/pontigo-geo/sitemap.xml
