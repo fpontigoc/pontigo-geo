@@ -17,6 +17,7 @@
 <meta name="twitter:image" content="https://fpontigoc.github.io/pontigo-geo/foto.jpg">
 <!-- Favicon -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%231B2D3E'/><text x='18' y='78' font-size='72' font-family='Arial' font-weight='bold' fill='%23B8722A'>P</text></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.24.0/tabler-icons.min.css">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -94,7 +95,8 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
 .como-num{font-size:48px;font-weight:700;color:var(--copper);opacity:.10;position:absolute;top:4px;right:10px;line-height:1;pointer-events:none}
 .como-title{font-size:13px;font-weight:700;color:var(--slate);margin-bottom:6px}
 .como-desc{font-size:11.5px;color:var(--gray);line-height:1.5}
-  .como-ilu{width:100%;height:auto;display:block;margin-bottom:12px}
+  .como-ilu{width:72px;height:72px;background:#1B2D3E;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+  .como-ilu .ti{font-size:34px;color:white}
 
 /* Dos columnas */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
@@ -398,70 +400,19 @@ body{font-family:Arial,sans-serif;background:var(--cream);color:var(--slate);fon
   <div class="sec-title">Cómo trabajo</div>
   <div class="como-grid">
     <div class="como-step">
-      <svg class="como-ilu" viewBox="0 0 300 88" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="10" width="68" height="16" rx="3" fill="#E8E4DE" stroke="#C8C2B6" stroke-width="1"/>
-        <text x="38" y="22" font-family="Arial,sans-serif" font-size="12" fill="#1B2D3E" text-anchor="middle" font-weight="600">Geología</text>
-        <rect x="4" y="30" width="68" height="16" rx="3" fill="#E8E4DE" stroke="#C8C2B6" stroke-width="1"/>
-        <text x="38" y="42" font-family="Arial,sans-serif" font-size="12" fill="#1B2D3E" text-anchor="middle" font-weight="600">Datos</text>
-        <rect x="4" y="50" width="68" height="16" rx="3" fill="#E8E4DE" stroke="#C8C2B6" stroke-width="1"/>
-        <text x="38" y="62" font-family="Arial,sans-serif" font-size="12" fill="#1B2D3E" text-anchor="middle" font-weight="600">Negocio</text>
-        <rect x="4" y="70" width="68" height="16" rx="3" fill="#E8E4DE" stroke="#C8C2B6" stroke-width="1"/>
-        <text x="38" y="82" font-family="Arial,sans-serif" font-size="12" fill="#1B2D3E" text-anchor="middle" font-weight="600">Contexto</text>
-        <line x1="72" y1="18" x2="114" y2="44" stroke="#B8722A" stroke-width="1.5" opacity=".5"/>
-        <line x1="72" y1="38" x2="114" y2="44" stroke="#B8722A" stroke-width="1.5" opacity=".5"/>
-        <line x1="72" y1="58" x2="114" y2="44" stroke="#B8722A" stroke-width="1.5" opacity=".5"/>
-        <line x1="72" y1="78" x2="114" y2="44" stroke="#B8722A" stroke-width="1.5" opacity=".5"/>
-        <circle cx="138" cy="44" r="27" fill="#1B2D3E"/>
-        <polyline points="125,44 136,57 154,30" stroke="#D4A520" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <line x1="167" y1="44" x2="188" y2="44" stroke="#B8722A" stroke-width="2.5" stroke-linecap="round"/>
-        <polyline points="182,37 190,44 182,51" fill="none" stroke="#B8722A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <rect x="196" y="26" width="100" height="36" rx="5" fill="#F0EDE8"/>
-        <text x="246" y="41" font-family="Arial,sans-serif" font-size="13" fill="#1B2D3E" text-anchor="middle" font-weight="700">Decisión</text>
-        <text x="246" y="56" font-family="Arial,sans-serif" font-size="12" fill="#B8722A" text-anchor="middle" font-weight="600">fundada</text>
-      </svg>
+      <div class="como-ilu"><i class="ti ti-zoom-scan" aria-hidden="true"></i></div>
       <div class="como-num">01</div>
       <div class="como-title">Entiendo el sistema completo</div>
       <div class="como-desc">Antes de cualquier conclusión, escucho el contexto: qué datos tienes, qué decisión enfrentas y qué incertidumbre te frena. Eso no tiene costo.</div>
     </div>
     <div class="como-step">
-      <svg class="como-ilu" viewBox="0 0 300 88" xmlns="http://www.w3.org/2000/svg">
-        <rect x="60" y="4" width="126" height="80" rx="6" fill="white" stroke="#C8C2B6" stroke-width="1.5"/>
-        <rect x="60" y="4" width="126" height="22" rx="6" fill="#1B2D3E"/>
-        <rect x="60" y="18" width="126" height="8" fill="#1B2D3E"/>
-        <text x="123" y="19" font-family="Arial,sans-serif" font-size="11.5" fill="white" text-anchor="middle" font-weight="700" letter-spacing="1.5">PROPUESTA</text>
-        <rect x="74" y="32" width="12" height="12" rx="2" fill="#16A34A"/>
-        <polyline points="76.5,38 80,42 84.5,35" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <text x="93" y="43" font-family="Arial,sans-serif" font-size="11.5" fill="#1B2D3E" font-weight="500">Entregables claros</text>
-        <rect x="74" y="50" width="12" height="12" rx="2" fill="#16A34A"/>
-        <polyline points="76.5,56 80,60 84.5,53" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <text x="93" y="61" font-family="Arial,sans-serif" font-size="11.5" fill="#1B2D3E" font-weight="500">Plazo definido</text>
-        <rect x="74" y="68" width="12" height="12" rx="2" fill="#16A34A"/>
-        <polyline points="76.5,74 80,78 84.5,71" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <text x="93" y="79" font-family="Arial,sans-serif" font-size="11.5" fill="#1B2D3E" font-weight="500">Valor fijo</text>
-        <rect x="178" y="2" width="68" height="34" rx="8" fill="#B8722A"/>
-        <text x="212" y="17" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="700">PRECIO</text>
-        <text x="212" y="31" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="700">FIJO</text>
-      </svg>
+      <div class="como-ilu"><i class="ti ti-notes" aria-hidden="true"></i></div>
       <div class="como-num">02</div>
       <div class="como-title">Alcance y precio definidos</div>
       <div class="como-desc">Propuesta con entregables específicos y valor fijo. Sabes exactamente qué recibes, en qué plazo y por qué precio — sin sorpresas.</div>
     </div>
     <div class="como-step">
-      <svg class="como-ilu" viewBox="0 0 300 88" xmlns="http://www.w3.org/2000/svg">
-        <rect x="14" y="6" width="96" height="76" rx="5" fill="white" stroke="#C8C2B6" stroke-width="1.5"/>
-        <rect x="14" y="6" width="96" height="20" rx="5" fill="#1B2D3E"/>
-        <rect x="14" y="19" width="96" height="7" fill="#1B2D3E"/>
-        <text x="62" y="19.5" font-family="Arial,sans-serif" font-size="10.5" fill="white" text-anchor="middle" font-weight="700" letter-spacing="1.5">INFORME</text>
-        <rect x="26" y="32" width="72" height="5" rx="2" fill="#1B2D3E" opacity=".13"/>
-        <rect x="26" y="42" width="60" height="5" rx="2" fill="#1B2D3E" opacity=".13"/>
-        <rect x="26" y="52" width="66" height="5" rx="2" fill="#1B2D3E" opacity=".13"/>
-        <rect x="26" y="62" width="50" height="5" rx="2" fill="#1B2D3E" opacity=".13"/>
-        <rect x="26" y="72" width="58" height="5" rx="2" fill="#1B2D3E" opacity=".13"/>
-        <path d="M158,6 L238,6 L238,50 C238,68 198,84 198,84 C198,84 158,68 158,50 Z" fill="#1B2D3E"/>
-        <path d="M164,14 L232,14 L232,50 C232,64 198,78 198,78 C198,78 164,64 164,50 Z" fill="#B8722A" opacity=".22"/>
-        <polyline points="178,44 194,60 222,26" stroke="#D4A520" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="250" y="48" font-family="Arial,sans-serif" font-size="11" fill="#1B2D3E" text-anchor="middle" font-weight="700" opacity=".5">✓</text>
-      </svg>
+      <div class="como-ilu"><i class="ti ti-certificate" aria-hidden="true"></i></div>
       <div class="como-num">03</div>
       <div class="como-title">Recomendación que se puede defender</div>
       <div class="como-desc">No un volumen de páginas. Una opinión técnica fundamentada, directa y trazable — que puedes aplicar, mostrar a un mandante o usar para decidir.</div>
